@@ -3707,7 +3707,7 @@ Box shadow
 -------------------------------------------------------------------------*/
 
 .post-item {
-    border-bottom: 1px solid #eee;
+    /*border-bottom: 1px solid #eee;*/
     margin-bottom: 40px;
     padding-bottom: 20px;
     position: relative;
