@@ -4705,3 +4705,7 @@ body:not(.no-page-loader) .wrapper,
     height: 100px;
     float: left;
 }
+.clear-table td{
+    border-top: 0px !important;
+    border-bottom: 0px !important;
+}
