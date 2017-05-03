@@ -235,3 +235,11 @@ ul.icon-list li i {
 	border-color: #272727;
 }
 
+
+/* ----------------------------------------------------------------
+CUSTOM
+-----------------------------------------------------------------*/
+.clear-table td{
+    border-top: 0px !important;
+    border-bottom: 0px !important;
+}
