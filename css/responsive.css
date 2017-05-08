@@ -621,7 +621,7 @@ Tablets (≥768px)
     }
     /* helper classes*/
     section {
-        padding: 40px 0;
+        padding: 10px 0;
     }
     /*helper classes*/
     .xs-text-center {
@@ -779,5 +779,9 @@ Tablets (≥768px)
     }
     #multiscroll .ms-right {
         background: none;
+    }
+    .heading h2{
+        margin-top: 60px;
+        text-align: center;
     }
 }

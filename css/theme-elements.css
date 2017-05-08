@@ -1329,7 +1329,7 @@ Headings
     border-top: 3px solid #303030;
     display: block;
     margin-top: 10px;
-    width: 30px;
+    width: 100%;
     content: "";
 }
 .heading > span {
