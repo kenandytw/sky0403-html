@@ -430,7 +430,6 @@ nav .main-menu .dropdown-menu {
     box-shadow: 0 13px 42px 11px rgba(0, 0, 0, 0.05);
     padding: 0px;
     border-style: solid none none;
-    border-width: 3px 0 0;
     border-radius: 0px;
 }
 nav .main-menu .dropdown-menu a,
