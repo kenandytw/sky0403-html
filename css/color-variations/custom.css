@@ -417,14 +417,26 @@ FOR CHANCE
     font-size: 18px; 
     margin-top: 6px;
 }
-
+.post-item .post-title h4 {
+    margin-top: 0px;
+}
+.widget-title{
+    margin-top: 0px;
+}
+.chance_option{
+    max-width: 200px;
+    margin-left: 350px;
+}
+.post-share{
+    text-align: right;
+}
 
 
 
 /* ----------------------------------------------------------------
 FOR MOBILE
 -----------------------------------------------------------------*/
-@media (max-width: 768px){
+@media (max-width: 990px){
     .post-title h4{
         font-size: 14px;
     }
@@ -457,5 +469,10 @@ FOR MOBILE
     }
     chance_button_box{
         margin: -20px 0px 30px 0px;    
+    }
+    .chance_option{
+        max-width: 200px;
+        margin-left: 0px;
+        margin: 0 auto;
     }
 }

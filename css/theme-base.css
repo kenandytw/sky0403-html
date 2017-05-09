@@ -122,7 +122,7 @@ h4 {
 
 h5 {
     font-size: 14px;
-    margin: 25px 0 20px 0;
+    margin: 30px 0 20px 0;
     }
 
 h6 { font-size: 12px; }
@@ -245,7 +245,9 @@ h6.font-parisienne {
 }
 #logo img {
     display: block;
-    max-width: 100%;
+    width: auto;
+    height: 30px !important;
+    margin-top: 13%;
 }
 #logo a.slogo {
     display: block;
@@ -2640,6 +2642,7 @@ body.device-xs .col-md-3 .flickr-widget img {
 #footer {
     clear: both;
     position: relative;
+    margin-top: 50px;
 }
 #footer .logo {
     margin-bottom: 54px;
@@ -3715,7 +3718,6 @@ Box shadow
 .post-item {
     /*border-bottom: 1px solid #eee;*/
     margin-bottom: 40px;
-    padding-bottom: 20px;
     position: relative;
     display: block;
 }
@@ -3726,10 +3728,8 @@ Box shadow
     margin-bottom: 18px;
 }
 .post-meta div {
-    border-right: 2px solid #f6f6f6;
     float: left;
-    margin-right: 18px;
-    padding: 8px 18px 8px 0;
+    padding: 8px 5px 8px 0;
 }
 .post-meta div:last-child {
     float: none;
@@ -3751,7 +3751,7 @@ Box shadow
 /* blog modern */
 
 body:not(.device-sm):not(.device-xs):not(.device-xxs) .post-modern .post-item {
-    padding-left: 100px;
+    padding-left: 0px;
 }
 body:not(.device-sm):not(.device-xs):not(.device-xxs) .post-modern .post-meta div {
     border-right: 0px;
@@ -3905,7 +3905,7 @@ body:not(.device-sm):not(.device-xs):not(.device-xxs) .post-4-columns.post-moder
 }
 .post-info {
     margin-bottom: 20px;
-    opacity: 0.5;
+    text-align: left;
 }
 .post-4-columns .post-info {
     font-size: 12px;
