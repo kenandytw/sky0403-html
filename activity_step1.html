@@ -129,16 +129,7 @@
         <!-- END: Header -->
 
 
-        <!-- Breadcrumb -->
-        <div class="breadcrumb col-md-12 text-center text-dark">
-            <ul>
-                <li><a href="#"><i class="fa fa-home"></i></a> </li>
-                <li><a href="#">探索機會</a> </li>
-                <li><a href="#">志工計畫</a> </li>
-                <li class="active"><a href="#">美洲</a> </li>
-            </ul>
-        </div>
-        <!-- END: Breadcrumb -->
+        
         
         <!-- END: Filter -->
         <!--section class="content">
@@ -214,14 +205,25 @@
 
         <!-- start Form  background-overlay-->
         <section class="activity">
-            <section class="parallax text-light " style="background: url(&quot;images/parallax/14.jpg&quot;) 0% -16.2px;" data-stellar-background-ratio="0.4">
+
+
             <div class="container">
-                <div class="text-center text-light">
+            <!-- Breadcrumb -->
+        <div class="breadcrumb col-md-12 text-left">
+            <ul>
+                <li>舉辦活動</li>
+                <li style="color:red;">Step 1. 活動資訊</li>
+                <li>Step 2. 建立報名表</li>
+                <li>Step 3. 舉辦活動</li>
+            </ul>
+        </div>
+        <!-- END: Breadcrumb -->
+                <!--div class="text-center text-light">
                     <hr class="space">
                     <h1 class="heading-jumbo">Skyline</h1>
                     <p class="lead">說名</p>
                 </div>
-                <hr class="space">
+                <hr class="space"-->
                 <div class="row">
                     <form class="form-transparent-fields">
                         <div class="row">
@@ -238,6 +240,23 @@
                                     <input type="email" class="form-control required email" name="senderEmail" placeholder="Enter email" id="email2" aria-required="true">
                                 </div>
                             </div-->
+                        </div>
+                        <hr class="line">
+                        <div class="row">
+                                            <div class="featured-box">
+                                                <div class="col-md-4">
+                                                <div class="image-box circle-image small">
+                                                    <img src="images/team/2.jpg" alt="">
+                                                </div>
+                                                </div>
+                                                <div class="col-md-8">
+                                                <div class="image-box-description text-left m-r-0">
+                                                    <h4>Skyline</h4>
+                                                    <div>我們是新創團隊 Skyline (www.skyline.tw) 致力於打造一個台灣青年的海外發展機 會匯流平台及國際人才網絡， 與年輕人一同走進世界、擁抱海外發展， 並期待在海歸以後，讓家鄉變得更好</div>
+                                                </div>
+                                                </div>    
+                                            </div>
+
                         </div>
                         <div class="row">
                             <div class="col-md-6 row">
@@ -302,12 +321,78 @@
                             <div class="col-md-12">
                                 <div class="form-group">
                                     <label class="upper" for="comment">活動特色</label>
-                                    <textarea class="form-control required" name="comment" rows="9" placeholder="Enter comment" id="comment2" aria-required="true"></textarea>
+                                    <div class="radio radio-info radio-inline">地區
+                                    <label class="radio-inline" style="margin-top:0px;"><input type="radio" name="optradio">亞洲</label>
+                                    <label class="radio-inline"><input type="radio" name="optradio">美洲</label>
+                                    <label class="radio-inline"><input type="radio" name="optradio">歐洲</label>
+                                    <label class="radio-inline"><input type="radio" name="optradio">大洋洲</label>
+                                    <label class="radio-inline"><input type="radio" name="optradio">非洲</label>
+                                    <label class="radio-inline"><input type="radio" name="optradio">線上</label>
+                                    <label class="radio-inline"><input type="radio" name="optradio">其他(跨區域)</label>
+                                    </div><br />
+                                    <div class="radio radio-info radio-inline">費用
+                                    <label class="radio-inline" style="margin-top:0px;"><input type="radio" name="cash">全額付費</label>
+                                    <label class="radio-inline"><input type="radio" name="cash">部分付費</label>
+                                    <label class="radio-inline"><input type="radio" name="cash">全額免費</label>
+                                    </div><br />
+                                    <div class="radio radio-info radio-inline">長短
+                                    <label class="radio-inline" style="margin-top:0px;"><input type="radio" name="long">當日</label>
+                                    <label class="radio-inline"><input type="radio" name="long">一周內</label>
+                                    <label class="radio-inline"><input type="radio" name="long">一個月內</label>
+                                    <label class="radio-inline"><input type="radio" name="long">一個月以上</label>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label class="upper" for="comment">關鍵字</label>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label class="upper" for="comment">活動負責人(活動聯絡窗口)</label>
+                                    <div class="row">
+
+                            <div class="col-md-3 col-md-offset-1">
+                                <div class="form-group">
+                                    <label class="upper" for="phone">姓名</label>
+                                    <input type="text" class="form-control required" name="phone" placeholder="姓名" id="phone2" aria-required="true">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label class="upper" for="phone">電話</label>
+                                    <input type="text" class="form-control required" name="phone" placeholder="電話" id="phone2" aria-required="true">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label class="upper" for="phone">Email</label>
+                                    <input type="text" class="form-control required" name="phone" placeholder="Email" id="phone2" aria-required="true">
+                                </div>
+                            </div>
 
 
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label class="upper" for="phone">活動名額數量</label>
+                                    <input type="number" class="form-control required" name="phone" placeholder="數量" aria-required="true">
+                                </div>
+                            </div>
+                        </div>
 
 
 
@@ -347,16 +432,15 @@
                         
 
                         <div class="row">
-                            <div class="col-md-12">
-                                <div class="form-group text-center">
-                                    <button class="btn btn-primary" type="submit"><i class="fa fa-paper-plane"></i>&nbsp;Send message</button>
-                                </div>
+                            <div class="col-md-12 text-right">
+<a class="button large border effect fill-vertical" href="#"><span>返回</span></a>
+<a class="button large border effect purple-dark fill-vertical"><span>暫存活動</span></a>
+<a class="button large border effect aqua button-3d fill-vertical"><span>下一步驟 建立報名表單</span></a>
                             </div>
                         </div>
                     </form>
                 </div>
             </div>
-        </section>
 
         </section>
         <!-- FOOTER -->
