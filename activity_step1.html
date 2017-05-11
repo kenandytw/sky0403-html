@@ -212,9 +212,9 @@
         
         <div class="seperator hidden-xs"></div>
 
-        <!-- start Form -->
+        <!-- start Form  background-overlay-->
         <section class="activity">
-            <section class="parallax text-light background-overlay" style="background: url(&quot;images/parallax/14.jpg&quot;) 0% -16.2px;" data-stellar-background-ratio="0.4">
+            <section class="parallax text-light " style="background: url(&quot;images/parallax/14.jpg&quot;) 0% -16.2px;" data-stellar-background-ratio="0.4">
             <div class="container">
                 <div class="text-center text-light">
                     <hr class="space">
@@ -245,50 +245,57 @@
                             <div class="col-md-12">
                                 <div class="form-group">
                                     <label class="upper" for="phone">活動名稱</label>
-                                    <input type="text" class="form-control required" name="phone" placeholder="Enter phone" id="phone2" aria-required="true">
+                                    <input type="text" class="form-control required" name="phone" placeholder="活動名稱" id="phone2" aria-required="true">
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <div class="form-group">
                                     <label class="upper" for="phone">活動時間</label>
-                                    <input type="text" class="form-control required" name="phone" placeholder="Enter phone" id="phone2" aria-required="true">
+                                    <input type="text" class="form-control required" name="phone" placeholder="活動時間" id="actrang" aria-required="true">
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <div class="form-group">
                                     <label class="upper" for="phone">報名時間</label>
-                                    <input type="text" class="form-control required" name="phone" placeholder="Enter phone" id="phone2" aria-required="true">
+                                    <input type="text" class="form-control required" name="phone" placeholder="報名時間" id="regrang" aria-required="true">
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <div class="form-group">
                                     <label class="upper" for="phone">活動國家</label>
-                                    <input type="text" class="form-control required" name="phone" placeholder="Enter phone" id="phone2" aria-required="true">
+                                    <input type="text" class="form-control required" name="phone" placeholder="活動國家" id="phone2" aria-required="true">
                                 </div>
                             </div>
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <label class="upper" for="phone">活動地址</label>
-                                    <input type="text" class="form-control required" name="phone" placeholder="Enter phone" id="phone2" aria-required="true">
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <label class="upper" for="phone">活動連結</label>
-                                    <input type="text" class="form-control required" name="phone" placeholder="Enter phone" id="phone2" aria-required="true">
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <label class="upper" for="phone">活動類型</label>
-                                    <input type="text" class="form-control required" name="phone" placeholder="Enter phone" id="phone2" aria-required="true">
-                                </div>
-                            </div>
+                            
+                            
 
 
                             </div>
                             <div class="col-md-6">
-                                <img />
+                                <img src="images/blog/1.jpg" id="triggerfile" style="border:2px solid #333;" />
+                                <input type="file" id="fileInput" style="display: none;">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label class="upper" for="phone">活動地址</label>
+                                    <input type="text" class="form-control required" name="phone" placeholder="活動地址" id="phone2" aria-required="true">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="upper" for="phone">活動連結</label>
+                                    <input type="text" class="form-control required" name="phone" placeholder="活動連結" id="phone2" aria-required="true">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="upper" for="phone">活動類型</label>
+                                    <input type="text" class="form-control required" name="phone" placeholder="活動類型" id="phone2" aria-required="true">
+                                </div>
                             </div>
                         </div>
                         <div class="row">
@@ -440,9 +447,33 @@
 
         <!-- Custom js file -->
         <script src="js/custom.js"></script>
+        <!-- Include Date Range Picker -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment-with-locales.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-daterangepicker/2.1.25/daterangepicker.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-daterangepicker/2.1.25/daterangepicker.min.css" />
+<script type="text/javascript">
+$(function() {
 
+    $('#actrang,#regrang').daterangepicker({
+        locale: {
+            format: 'YYYY-MM-DD'
+        },
+        startDate: start,
+        endDate: end,
+        ranges: {
+           'Today': [moment(), moment()],
+           'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+           'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+           'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+           'This Month': [moment().startOf('month'), moment().endOf('month')],
+           'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+        }
+    });
 
-
+    $('#triggerfile').bind('click',function(){ $('#fileInput').trigger('click'); });
+    
+});
+</script>
 </body>
 
 </html>
