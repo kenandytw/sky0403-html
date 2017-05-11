@@ -158,13 +158,13 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label class="upper" for="x">活動時間</label>
-                                        <input type="text" class="form-control required" name="x" placeholder="x" id="x" aria-required="true">
+                                        <input type="text" class="form-control required datetimepicker" name="x" placeholder="x" id="x" aria-required="true">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label class="upper" for="x">報名時間</label>
-                                        <input type="text" class="form-control required" name="x" placeholder="x" id="x" aria-required="true">
+                                        <input type="text" class="form-control required datetimepicker" name="x" placeholder="x" id="x" aria-required="true">
                                     </div>
                                 </div>
                             </div>
@@ -359,7 +359,17 @@
 
         <!-- Custom js file -->
         <script src="js/custom.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment-with-locales.min.js"></script>
+        <script type="text/javascript" src="vendor/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="vendor/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" />
+
         <script type="text/javascript">
+            $(function(){
+                $('.datetimepicker').datetimepicker({
+                    format: 'YYYY-MM-DD'
+                });
+            });
+        /*
             $('#portfolio-filter li').bind('click', function() {
                 $('#portfolio-filter li').removeClass('ptf-active');
                 $(this).addClass('ptf-active');
@@ -371,7 +381,7 @@
             $('#areaBody td').bind('click', function() {
                 $('#areaBody td').removeClass('BodySelect');
                 $(this).addClass('BodySelect');
-            });
+            });*/
 
         </script>
 
