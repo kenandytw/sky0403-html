@@ -8,7 +8,7 @@
 
 
     <link rel="shortcut icon" href="">
-    <title>新增機構 @ Skyline</title>
+    <title>修改機構 @ Skyline</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -129,8 +129,6 @@
         <!-- END: Header -->
 
 
-        <div class="seperator hidden-xs"></div>
-
         <!-- start Form  background-overlay-->
         <section class="activity">
 
@@ -142,25 +140,12 @@
           <ul>
             <li><a href="#"><i class="fa fa-home"></i></a> </li>
             <li><a href="#">我的機會</a> </li>
-            <li class="active"><a href="#">新增機構</a> </li>
+            <li class="active"><a href="#">管理機構</a> </li>
           </ul>
         </div>
       </div>
     </div>
-            <!-- Breadcrumb -->
-        <div class="breadcrumb col-md-12 text-left">
-            <ul>
-                <li style="color:red;">Step 1. 活動資訊</li>
-                <li>Step 2. 建立報名表</li>
-            </ul>
-        </div>
-        <!-- END: Breadcrumb -->
-                <!--div class="text-center text-light">
-                    <hr class="space">
-                    <h1 class="heading-jumbo">Skyline</h1>
-                    <p class="lead">說名</p>
-                </div>
-                <hr class="space"--><form>
+    <form>
                 <div class="row" id="writeFrom">
 
                         <div class="row">
@@ -292,33 +277,16 @@
 
                         <div class="row">
                             <div class="col-md-6">
-                                <button type="reset" class="button large border effect aqua button-3d fill-vertical">全部清除</button>
+                                <button type="reset" class="button large btn-danger">刪除機構</button>
                             </div>
                             <div class="col-md-6 text-right">
-<a class="button large border effect aqua button-3d fill-vertical" href="javascript:;" id="nextBtn"><span>下一步驟</span></a>
+                                <button type="button" class="button large btn-info">瀏覽機構公開頁面</button>
+                                <button type="button" class="button large btn-default">儲存機構資訊</button>
                             </div>
                         </div>
                     
                 </div>
 
-                <div class="row" style="display: none;" id="checkform">
-                    <div class="row">
-                        <div class="col-md-12" style="border:3px solid #eee;padding: 5px auto;">
-                            <p>引言</p>
-                            <p>引言</p>
-                            <p>引言</p>
-                            <p>引言</p>
-                            <p>引言</p>
-                            <div style="border-top:3px solid #eee;margin:5px;padding:10px;"><label class="checkbox-inline"><input type="checkbox" value="">本機構同意以上使用條款</label></div>
-                        </div>
-
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12 text-right">
-                            <button type="submit" class="button large btn-default">提出申請</button>
-                        </div>
-                    </div>
-                </div>
 
                 </form>
 
@@ -416,13 +384,7 @@
 <script type="text/javascript">
 $(function() {
 
-    $('#nextBtn').bind('click',function(){
-        $('#writeFrom').hide();
-        $('#checkform').show();
-        $('.container .breadcrumb ul li:eq(0)').css('color','');
-        $('.container .breadcrumb ul li:eq(1)').css('color','red');
 
-    });
     $('#triggerfile').bind('click',function(){ $('#fileInput').trigger('click'); });
     
 });

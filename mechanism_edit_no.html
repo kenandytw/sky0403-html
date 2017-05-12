@@ -136,17 +136,6 @@
 
 
             <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="breadcrumb classic text-left">
-          <ul>
-            <li><a href="#"><i class="fa fa-home"></i></a> </li>
-            <li><a href="#">我的機會</a> </li>
-            <li class="active"><a href="#">新增機構</a> </li>
-          </ul>
-        </div>
-      </div>
-    </div>
             <!-- Breadcrumb -->
         <div class="breadcrumb col-md-12 text-left">
             <ul>
@@ -162,7 +151,12 @@
                 </div>
                 <hr class="space"--><form>
                 <div class="row" id="writeFrom">
-
+                    <div class="row"><div class="col-md-12">
+                        <div role="alert" class="alert alert-danger">
+                            <p>審查結果:未通過</p>
+                            <p>原    因:負責人電話尚未驗證,煩請進行驗證後再次送出審核,Skyline團隊將盡速為您服務</p>
+                        </div>
+                    </div></div>
                         <div class="row">
                             <div class="col-md-6 row">
 
@@ -204,7 +198,7 @@
                                 </div>
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <label class="upper" for="phone">專頁網址</label>
+                                        <label class="upper" for="phone">專業網址</label>
                                         <div class="input-group">
                                           <input type="url" class="form-control" aria-required="true">
                                           <div class="input-group-btn">
@@ -287,8 +281,18 @@
                                 </div>
                             </div>
                         </div>
-
-                        
+                        <div class="hr-title hr-long center"><abbr>機構相關證明文件</abbr> </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <span>為確認您的機構為合法成立且正常營運,請上傳機構負責人身分證正反面檔案及相關可供證明之檔案(如機構介紹.過去舉辦活動等),以利審查,上傳檔案已PDF為限.</span><br />
+    <span class="btn btn-success fileinput-button">
+        <i class="glyphicon glyphicon-plus"></i>
+        <span>Select files...</span>
+        <!-- The file input field used as target for the file upload widget -->
+        <input id="fileupload" type="file" name="files[]" multiple="" data-url="伺服器端檔案">
+    </span>
+                            </div>
+                        </div>
 
                         <div class="row">
                             <div class="col-md-6">
@@ -412,7 +416,10 @@
 
         <!-- Custom js file -->
         <script src="js/custom.js"></script>
-
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-file-upload/9.18.0/js/vendor/jquery.ui.widget.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-file-upload/9.18.0/js/jquery.iframe-transport.min.jss"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-file-upload/9.18.0/js/jquery.fileupload.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/blueimp-file-upload/9.18.0/css/jquery.fileupload.min.css"/>
 <script type="text/javascript">
 $(function() {
 
@@ -424,6 +431,15 @@ $(function() {
 
     });
     $('#triggerfile').bind('click',function(){ $('#fileInput').trigger('click'); });
+
+    $('#fileupload').fileupload({
+        dataType: 'json',
+        done: function (e, data) {
+            $.each(data.result.files, function (index, file) {
+                $('<p/>').text(file.name).appendTo(document.body);
+            });
+        }
+    });
     
 });
 </script>
