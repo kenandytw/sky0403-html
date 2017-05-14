@@ -6423,8 +6423,8 @@ Breadcrumbs
 
 .breadcrumb.fancy a:hover,
 .breadcrumb.fancy .active a {
-    background: #ddd;
-    color: #333;
+    background: #18b0ac;
+    color: #fff;
 }
 
 .breadcrumb.fancy a::before {
@@ -6448,7 +6448,7 @@ Breadcrumbs
 
 .breadcrumb.fancy a:hover::before,
 .breadcrumb.fancy .active a:before {
-    border-color: #ddd #ddd #ddd transparent;
+    border-color: #18b0ac #18b0ac #18b0ac transparent;
 }
 
 .breadcrumb.fancy a::after {
@@ -6464,7 +6464,7 @@ Breadcrumbs
 
 .breadcrumb.fancy a:hover::after,
 .breadcrumb.fancy .active a:after {
-    border-left-color: #ddd;
+    border-left-color: #18b0ac;
 }
 
 

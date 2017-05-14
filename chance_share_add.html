@@ -157,14 +157,24 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label class="upper" for="x">活動時間</label>
-                                        <input type="text" class="form-control required datetimepicker" name="x" placeholder="x" id="x" aria-required="true">
+                                        <label class="upper" for="event_time">活動時間</label>
+                                        <div class="col-md-6">
+                                            <input type="text" class="form-control required datetimepicker" name="event_time_start" placeholder="活動開始時間" id="event_time_start" aria-required="true">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input type="text" class="form-control required datetimepicker" name="event_time_start" placeholder="活動結束時間" id="event_time_end" aria-required="true">
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label class="upper" for="x">報名時間</label>
-                                        <input type="text" class="form-control required datetimepicker" name="x" placeholder="x" id="x" aria-required="true">
+                                        <label class="upper" for="start_time">報名時間</label>
+                                        <div class="col-md-6">
+                                            <input type="text" class="form-control required datetimepicker" name="start_time_start" placeholder="報名開始時間" id="start_time_start" aria-required="true">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input type="text" class="form-control required datetimepicker" name="start_time_start" placeholder="報名開始時間" id="start_time_start" aria-required="true">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -202,78 +212,78 @@
                 </div>
                 <div class="hr-title hr-long center"><abbr>活動特色</abbr> </div>
                 <div class="row">
-                    <div class="col-md-10 col-md-offset-1">
+                    
                         <div class="col-md-6">
-                        <div class="form-group">
-                            <label class="upper" for="">費用</label>
-                            <div class="radio-inline">
-                                <label>
+                            <div class="form-group">
+                                <label class="upper" for="">費用</label>
+                                <div class="radio-inline">
+                                    <label>
                                     <input type="radio" name="cost" value="全額付費" checked>全額付費</label>
-                            </div>
-                            <div class="radio-inline">
-                                <label>
+                                </div>
+                                <div class="radio-inline">
+                                    <label>
                                     <input type="radio" name="cost" value="部分付費">部分付費</label>
-                            </div>
-                            <div class="radio-inline">
-                                <label>
+                                </div>
+                                <div class="radio-inline">
+                                    <label>
                                     <input type="radio" name="cost" value="全額免費">全額免費</label>
+                                </div>
                             </div>
                         </div>
-                    </div>
                         <div class="col-md-6">
-                        <div class="form-group">
-                            <label class="upper" for="">長短</label>
-                            <div class="radio-inline">
-                                <label>
+                            <div class="form-group">
+                                <label class="upper" for="">長短</label>
+                                <div class="radio-inline">
+                                    <label>
                                     <input type="radio" name="period" value="當日" checked>當日</label>
-                            </div>
-                            <div class="radio-inline">
-                                <label>
+                                </div>
+                                <div class="radio-inline">
+                                    <label>
                                     <input type="radio" name="period" value="一週內">一週內</label>
-                            </div>
-                            <div class="radio-inline">
-                                <label>
+                                </div>
+                                <div class="radio-inline">
+                                    <label>
                                     <input type="radio" name="period" value="一個月內">一個月內</label>
-                            </div>
-                            <div class="radio-inline">
-                                <label>
+                                </div>
+                                <div class="radio-inline">
+                                    <label>
                                     <input type="radio" name="period" value="一個月以上">一個月以上</label>
+                                </div>
                             </div>
                         </div>
-                    </div>
                         <div class="col-md-6">
-                        <div class="form-group">
-                            <label class="upper" for="">地區</label>
-                            <div class="radio-inline">
-                                <label>
+                            <div class="form-group">
+                                <label class="upper" for="">地區</label>
+                                <div class="radio-inline">
+                                    <label>
                                     <input type="radio" name="region" value="亞洲" checked>亞洲</label>
-                            </div>
-                            <div class="radio-inline">
-                                <label>
+                                </div>
+                                <div class="radio-inline">
+                                    <label>
                                     <input type="radio" name="region" value="美洲">美洲</label>
-                            </div>
-                            <div class="radio-inline">
-                                <label>
+                                </div>
+                                <div class="radio-inline">
+                                    <label>
                                     <input type="radio" name="region" value="歐洲">歐洲</label>
-                            </div>
-                            <div class="radio-inline">
-                                <label>
+                                </div>
+                                <div class="radio-inline">
+                                    <label>
                                     <input type="radio" name="region" value="大洋洲">大洋洲</label>
-                            </div>
-                            <div class="radio-inline">
-                                <label>
+                                </div>
+                                <div class="radio-inline">
+                                    <label>
                                     <input type="radio" name="region" value="非洲">非洲</label>
-                            </div>
-                            <div class="radio-inline">
-                                <label>
+                                </div>
+                                <div class="radio-inline">
+                                    <label>
                                     <input type="radio" name="region" value="線上">線上</label>
-                            </div>
-                            <div class="radio-inline">
-                                <label>
+                                </div>
+                                <div class="radio-inline">
+                                    <label>
                                     <input type="radio" name="region" value="其他(跨區域)">其他(跨區域)</label>
+                                </div>
                             </div>
                         </div>
-                    </div>
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label class="upper" for="">我是否參加過</label>
@@ -295,9 +305,9 @@
                                 <label class="upper" for="">關鍵字</label>
                                 <div class="row">
                                     <div class="col-md-8">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control required" name="interests-tag" placeholder="請輸入tag" id="" aria-required="true">
-                                    </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control required" name="interests-tag" placeholder="例：標籤1,標籤2" id="" aria-required="true">
+                                        </div>
                                     </div>
                                     <div class="col-md-2">
                                         <a href="#" class="button small shark button-3d rounded icon-left m-t-10"><span><i class="fa fa-plus"></i>新增</span></a>
@@ -313,7 +323,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    
                 </div>
                 <div class="row m-t-40">
                     <div class="col-md-12">
@@ -406,7 +416,7 @@
             </div>
         </footer>
         <!-- END: FOOTER -->
-
+    </div>
         <!-- END: WRAPPER -->
 
         <!-- GO TOP BUTTON -->
@@ -422,25 +432,11 @@
         <link rel="stylesheet" type="text/css" href="vendor/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" />
 
         <script type="text/javascript">
-            $(function(){
+            $(function() {
                 $('.datetimepicker').datetimepicker({
                     format: 'YYYY-MM-DD'
                 });
             });
-        /*
-            $('#portfolio-filter li').bind('click', function() {
-                $('#portfolio-filter li').removeClass('ptf-active');
-                $(this).addClass('ptf-active');
-            });
-            $('#typeBody td').bind('click', function() {
-                $('#typeBody td').removeClass('BodySelect');
-                $(this).addClass('BodySelect');
-            });
-            $('#areaBody td').bind('click', function() {
-                $('#areaBody td').removeClass('BodySelect');
-                $(this).addClass('BodySelect');
-            });*/
-
         </script>
 
 
