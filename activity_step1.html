@@ -320,11 +320,11 @@
                                         <div class="row">
                                             <div class="col-md-8">
                                                 <div class="form-group">
-                                                    <input type="text" class="form-control required" name="interests-tag" placeholder="例：標籤1,標籤2" id="" aria-required="true">
+                                                    <input type="text" class="form-control required" name="interests-tag" placeholder="例：標籤1,標籤2" id="KeyWord" aria-required="true">
                                                 </div>
                                             </div>
                                             <div class="col-md-2">
-                                                <a href="#" class="button small shark button-3d rounded icon-left m-t-10"><span><i class="fa fa-plus"></i>新增</span></a>
+                                                <a href="javascript:;" class="button small shark button-3d rounded icon-left m-t-10" id="addKeyWord"><span><i class="fa fa-plus"></i>新增</span></a>
                                             </div>
                                         </div>
                                         <div class="tags">
@@ -418,6 +418,30 @@
                 </div>
             </div>
         </section>
+<!-- modal -->
+<div class="modal fade in" id="alertModal" tabindex="-1" role="modal" aria-labelledby="modal-label-2" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+                <h4 id="modal-label-2" class="modal-title">提醒</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <p id="alertMessage"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="pull-left">
+                    <button data-dismiss="modal" class="btn btn-b" type="button">關閉</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- modal -->
         <!-- FOOTER -->
         <footer class="background-dark text-grey" id="footer">
             <div class="footer-content">
@@ -510,11 +534,11 @@
         <script src="js/custom.js"></script>
         <!-- Include Date Range Picker -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment-with-locales.min.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-daterangepicker/2.1.25/daterangepicker.min.js"></script>
+        <!--script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-daterangepicker/2.1.25/daterangepicker.min.js"></script>
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-daterangepicker/2.1.25/daterangepicker.min.css" />
 
         <script type="text/javascript" src="vendor/bootstrap-tagsinput/bootstrap-tagsinput.js"></script>
-        <link rel="stylesheet" type="text/css" href="vendor/bootstrap-tagsinput/bootstrap-tagsinput.css" />
+        <link rel="stylesheet" type="text/css" href="vendor/bootstrap-tagsinput/bootstrap-tagsinput.css" /-->
         <script type="text/javascript" src="vendor/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
         <link rel="stylesheet" type="text/css" href="vendor/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" />
         <!--script type="text/javascript">
@@ -555,6 +579,32 @@
                 });
                 $('#actImgUpload').bind('click', function() {
                     $('#actImgInput').trigger('click');
+                });
+                $('#addKeyWord').bind('click',function(){
+
+            var obj = [];
+            var tags = $('#KeyWord').val();
+            tags = tags.split(',');
+            $.each(tags, function( index, val ) {
+                if(val.length > 30){
+                    $('#alertMessage').text('標籤字元大於30字無法存入');
+                    $('#alertModal').modal('show');
+                } else if(val==''){
+                    $('#alertMessage').text('無法存入空白標籤');
+                    $('#alertModal').modal('show');
+                } else if($.inArray( val, obj )>=0){
+                    $('#alertMessage').text('文章已存在此標籤');
+                    $('#alertModal').modal('show');
+                } else {
+                    val = val.trim();
+                    $('.tags').append('<a href="#">'+val+'</a>');
+                }
+            });
+            $('#KeyWord').val('');
+            
+
+
+
                 });
             });
         </script>
