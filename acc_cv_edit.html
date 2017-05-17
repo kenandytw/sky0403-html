@@ -130,7 +130,7 @@
 
 
         <!-- CONTENT -->
-        <section class="content">
+        <section class="content"><form>
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -170,14 +170,59 @@
                             
                             
                             <div class="col-md-8">
-                                <div class="post-info">
-                                    <h3>無疑如 <span>YUU WU</span></h3>
-                                    <ul class="list list-lines" style="margin-left:20px;">
-                                        <li>0988-320296</li>
-                                        <li>yljuwu1992@gmail.com</li>
-                                        <li>台中市北屯區XX XXXXX XXX號</li>
-                                    </ul>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="upper" for="name">姓名</label>
+                                        <input type="text" class="form-control required" name="name" placeholder="姓名" aria-required="true">
+                                    </div>
                                 </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="upper" for="english_name">English Name</label>
+                                        <input type="text" class="form-control required" name="english_name" placeholder="English Name" id="english_name" aria-required="true">
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label class="upper" for="">性別</label>
+                                        <div class="radio-inline">
+                                            <label><input type="radio" name="cost" value="男" checked>男</label>
+                                        </div>
+                                        <div class="radio-inline">
+                                            <label><input type="radio" name="cost" value="女">女</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label class="upper" for="name">公司簡介</label>
+                                        <textarea class="form-control required" name="comment" rows="9" placeholder="Enter comment" id="comment2" aria-required="true"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group widget-tags">
+                                        <label class="upper" for="">關鍵字</label>
+                                        <div class="row">
+                                            <div class="col-md-8">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control required" name="interests-tag" placeholder="例：標籤1,標籤2" id="KeyWord" aria-required="true">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <a href="javascript:;" class="button small shark button-3d rounded icon-left m-t-10" id="addKeyWord"><span><i class="fa fa-plus"></i>新增</span></a>
+                                            </div>
+                                        </div>
+                                        <div class="tags">
+                                            <a href="#">泰國</a>
+                                            <a href="#">東南亞</a>
+                                            <a href="#">實習</a>
+                                            <a href="#">競賽</a>
+                                            <a href="#">領導</a>
+                                            <a href="#">設計思考</a>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
                             <div class="col-md-4">
                                 <div class="post-image">
@@ -186,88 +231,402 @@
                                     </a>
                                 </div>
                             </div>
-                        </div>
+                        </div><div class="clearfix"></div>
+                        <div class="hr-title hr-long center"><abbr>基本資料</abbr> </div>
                         <div class="col-md-12">
-                            <div class="col-md-12">
-                                <div class="col-md-12">
-                                    <div class="post-title">
-                                        <h4>教育背景</h4>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label class="upper" for="comment">暱稱</label>
+                                        <input type="text" class="form-control required" name="phone" placeholder="暱稱" id="phone2" aria-required="true">
                                     </div>
-                                    <div class="post-description">
-                                        <ul>
-                                            <li>國立政治大學  財務管理學系  碩士 <span style="float: right;">2014/10 ~ 2016/5</span>
-                                                <br >GPA 4.0 / 4.0
-                                                <br >韓國高等科技管理學院
-                                            </li>
-                                            <li>國立政治大學  財務管理學系  碩士 <span style="float: right;">2014/10 ~ 2016/5</span>
-                                                <br >GPA 4.0 / 4.0
-                                                <br >韓國高等科技管理學院
-                                            </li>
-                                        </ul>
+                                </div>
+                                <div class="col-md-8">
+                                    <label class="upper" for="comment">生日</label>
+                                    <div class="form-inline">
+                                        <div class="input-group">
+                                            <div class="input-group-btn"><select class="form-control required"><option>1999</option></select></div>
+                                            年
+                                            <div class="input-group-btn"><select class="form-control required"><option>01</option></select></div>
+                                            月
+                                            <div class="input-group-btn"><select class="form-control required"><option>01</option></select></div>
+                                            日
+                                            <div class="btn-group" data-toggle="buttons">
+                                                <label class="btn btn-default active"><input type="radio" value="1" name="is_activeAdd">公開</label>
+                                                <label class="btn btn-default"><input type="radio" value="0" name="is_activeAdd">不公開</label>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <hr class="line">
-                                    <div class="post-title">
-                                        <h4>工作經歷</h4>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label class="upper" for="comment">國籍</label>
+                                        <select class="form-control required"><option>Taiwan 台灣</option></select>
                                     </div>
-                                    <div class="post-description">
-                                        <ul>
-                                            <li>XXX公司  投資部門  專案實習生 <span style="float: right;">2014/10 ~ 2016/5</span>
-                                                <br >協助專案執行
-                                                <br >負責
-                                            </li>
-                                            <li>XXX公司  投資部門  專案實習生 <span style="float: right;">2014/10 ~ 2016/5</span>
-                                                <br >協助專案執行
-                                                <br >負責
-                                            </li>
-                                        </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label class="upper" for="comment">身分證號碼</label>
+                                        <input type="text" class="form-control required" name="phone" placeholder="身分證號碼" id="phone2" aria-required="true">
                                     </div>
-                                    <hr class="line">
-                                    <div class="post-title">
-                                        <h4>活動經驗</h4>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label class="upper" for="comment">護照號碼/台胞證碼</label>
+                                        <input type="text" class="form-control required" name="phone" placeholder="護照號碼/台胞證碼" id="phone2" aria-required="true">
                                     </div>
-                                    <div class="post-description">
-                                        <ul>
-                                            <li>南亞研究社團 社長 <span style="float: right;">2014/10 ~ 2016/5</span>
-                                                <br >建立社團
-                                                <br >負責
-                                            </li>
-                                            <li>簡譜賽志工服務團 小團長 <span style="float: right;">2014/10 ~ 2016/5</span>
-                                                <br >負責
-                                                <br >負責
-                                            </li>
-                                        </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label class="upper" for="comment">手機號碼</label>
+                                        <input type="text" class="form-control required" name="phone" placeholder="手機號碼" id="phone2" aria-required="true">
                                     </div>
-                                    <hr class="line">
-                                    <div class="post-title">
-                                        <h4>其他能力</h4>
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="form-group">
+                                        <label class="upper" for="comment">E-Mail</label>
+                                        <input type="email" class="form-control required" name="phone" placeholder="E-Mail" id="phone2" aria-required="true">
                                     </div>
-                                    <div class="post-description">
-                                        <h5>語言能力</h5>
-                                        <ul>
-                                            <li>英文    多億905分</li>
-                                            <li>韓文    聽:略懂 / 說:略懂 / 讀:略懂 / 寫:略懂</li>
-                                        </ul>
-                                        <h5>語言能力</h5>
-                                        <ul>
-                                            <li>CFA Level I / CFA 協會 / 2014/06</li>
-                                        </ul>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <div class="btn-group" data-toggle="buttons" style="margin-top:26px;">
+                                                <label class="btn btn-default active"><input type="radio" value="1" name="is_activeAdd">公開</label>
+                                                <label class="btn btn-default"><input type="radio" value="0" name="is_activeAdd">不公開</label>
+                                            </div>
                                     </div>
+                                </div>
 
+                                <div class="col-md-12">
+                                    <div class="form-inline">
+                                        <label class="upper" for="comment">機構所在地</label>
+                                        <div class="input-group">
+                                            <div class="input-group-btn"><select class="form-control required"><option>國家</option></select></div>
+                                            <input type="text" class="form-control required" name="phone" placeholder="郵遞區號" aria-required="true">
+                                        </div>
+                                    </div>
+                                    
                                 </div>
                             </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label class="upper" for="comment"></label>
+                                        <input type="text" class="form-control required" name="phone" placeholder="地址" aria-required="true">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label class="upper" for="comment">FB 帳號</label>
+                                        <input type="text" class="form-control required" name="phone" placeholder="FB 帳號" aria-required="true">
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="form-group">
+                                        <label class="upper" for="comment">作品集/個人網站</label>
+                                        <input type="email" class="form-control required" name="phone" placeholder="作品集/個人網站" aria-required="true">
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <div class="btn-group" data-toggle="buttons" style="margin-top:26px;">
+                                                <label class="btn btn-default active"><input type="radio" value="1" name="is_activeAdd">公開</label>
+                                                <label class="btn btn-default"><input type="radio" value="0" name="is_activeAdd">不公開</label>
+                                            </div>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label class="upper" for="comment">英文能力</label>
+                                        <input type="text" class="form-control required" name="phone" placeholder="證照名稱" aria-required="true">
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="form-group">
+                                        <label class="upper" for="comment">分數</label>
+                                        <input type="email" class="form-control required" name="phone" placeholder="分數" aria-required="true">
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <div class="btn-group" data-toggle="buttons" style="margin-top:26px;">
+                                                <label class="btn btn-default active"><input type="radio" value="1" name="is_activeAdd">公開</label>
+                                                <label class="btn btn-default"><input type="radio" value="0" name="is_activeAdd">不公開</label>
+                                            </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <label class="upper" for="comment">飲食習慣</label>
+                                    <div class="form-inline">
+                                        <div class="btn-group" data-toggle="buttons" style="margin-top:26px;">
+                                            <label class="btn btn-default active"><input type="radio" value="1" name="is_activeAdd">葷食</label>
+                                            <label class="btn btn-default"><input type="radio" value="0" name="is_activeAdd">素食</label>
+                                            <label class="btn btn-default"><input type="radio" value="0" name="is_activeAdd">其他需求</label>
+                                            <input type="text" class="form-control required" name="phone" placeholder="其他需求" aria-required="true">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <label class="upper" for="comment">保險受益人</label>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label class="upper" for="comment">名稱</label>
+                                            <input type="text" class="form-control required" name="phone" placeholder="名稱" aria-required="true">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label class="upper" for="comment">關係</label>
+                                            <input type="text" class="form-control required" name="phone" placeholder="關係" aria-required="true">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label class="upper" for="comment">聯絡電話</label>
+                                            <input type="text" class="form-control required" name="phone" placeholder="聯絡電話" aria-required="true">
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div class="clearfix"></div>
+                        <div class="hr-title hr-long center"><abbr>自我介紹</abbr> </div>
+
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <textarea class="form-control required" name="comment" rows="9" placeholder="Enter comment" id="comment2" aria-required="true"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="clearfix"></div>
+                        <div class="hr-title hr-long center"><abbr>教育背景</abbr> </div>
+                        <div class="col-md-12">
+                            <div>
+                                <div class="form-group">
+                                    <div style="line-height: 50px;">#1<span style="float:right">
+                                        <div class="btn-group" data-toggle="buttons">
+                                            <label class="btn-xs btn btn-default active"><input type="radio" value="1" name="is_activeAdd">公開</label>
+                                            <label class="btn-xs btn btn-default"><input type="radio" value="0" name="is_activeAdd">不公開</label>
+                                        </div>
+                                        <button type="button" class="btn btn-xs btn-danger" style="margin-top:5px;"><i class="fa fa-remove">刪除</i></button>
+                                    </span></div>
+                                </div>
+                                <div class="form-inline">
+                                    <div class="input-group-btn"><select class="form-control required"><option>碩士</option></select></div>
+                                    <div class="input-group-btn"><select class="form-control required"><option>已畢業</option></select></div>
+                                    <div class="input-group-btn"><input type="text" class="form-control required" name="phone" placeholder="學校" aria-required="true"></div>
+                                    <div class="input-group-btn"><input type="text" class="form-control required" name="phone" placeholder="科系" aria-required="true"></div>
+                                    <div class="input-group-btn">從<select class="form-control required"><option>2010/10</option></select></div>
+                                    <div class="input-group-btn">至<select class="form-control required"><option>2017/10</option></select></div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control required" name="phone" placeholder="其他備註(如成績.雙主修.輔系等)" aria-required="true">
+                                </div>
+                            </div>
+                            <a href="#" class="button fullwidth rounded btn-default text-center"><span><i class="fa fa-plus"></i>新增一筆資料</span></a>
+                        </div>
+
+
+
+
+                        <div class="clearfix"></div>
+                        <div class="hr-title hr-long center"><abbr>工作經歷</abbr> </div>
+                        <div class="col-md-12">
+                            <div>
+                                <div class="form-group">
+                                    <div style="line-height: 50px;">#1<span style="float:right">
+                                        <div class="btn-group" data-toggle="buttons">
+                                            <label class="btn-xs btn btn-default active"><input type="radio" value="1" name="is_activeAdd">公開</label>
+                                            <label class="btn-xs btn btn-default"><input type="radio" value="0" name="is_activeAdd">不公開</label>
+                                        </div>
+                                        <button type="button" class="btn btn-xs btn-danger" style="margin-top:5px;"><i class="fa fa-remove">刪除</i></button>
+                                    </span></div>
+                                </div>
+                                <div class="form-inline">
+                                    <div class="input-group-btn"><input type="text" class="form-control required" name="phone" placeholder="公司名稱" aria-required="true"></div>
+                                    <div class="input-group-btn"><input type="text" class="form-control required" name="phone" placeholder="部門" aria-required="true"></div>
+                                    <div class="input-group-btn"><input type="text" class="form-control required" name="phone" placeholder="職稱" aria-required="true"></div>
+                                    <div class="input-group-btn">從<select class="form-control required"><option>2010/5</option></select></div>
+                                    <div class="input-group-btn">至<select class="form-control required"><option>2017/5</option></select></div>
+                                    <div class="input-group-btn">
+                                        <label><input type="checkbox" name="">仍在職</label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control required" name="phone" placeholder="工作內容" aria-required="true">
+                                </div>
+                            </div>
+                            <a href="#" class="button fullwidth rounded btn-default text-center"><span><i class="fa fa-plus"></i>新增一筆資料</span></a>
+                        </div>
+
+
+
+                        <div class="clearfix"></div>
+                        <div class="hr-title hr-long center"><abbr>其他語言</abbr> </div>
+                        <div class="col-md-12">
+                            <div>
+                                <div class="form-group">
+                                    <div style="line-height: 50px;">&nbsp;<span style="float:right">
+                                        <div class="btn-group" data-toggle="buttons">
+                                            <label class="btn-xs btn btn-default active"><input type="radio" value="1" name="is_activeAdd">公開</label>
+                                            <label class="btn-xs btn btn-default"><input type="radio" value="0" name="is_activeAdd">不公開</label>
+                                        </div>
+                                        <button type="button" class="btn btn-xs btn-danger" style="margin-top:5px;"><i class="fa fa-remove">刪除</i></button>
+                                    </span></div>
+                                </div>
+                                <div class="form-inline">
+                                    <div class="input-group-btn"><input type="text" class="form-control required" name="phone" placeholder="語言" aria-required="true"></div>
+                                    <div class="input-group-btn"><select class="form-control required"><option>聽:略懂</option></select></div>
+                                    <div class="input-group-btn"><select class="form-control required"><option>說:略懂</option></select></div>
+                                    <div class="input-group-btn"><select class="form-control required"><option>讀:略懂</option></select></div>
+                                    <div class="input-group-btn"><select class="form-control required"><option>寫:略懂</option></select></div>
+                                    <div class="input-group-btn"><input type="text" class="form-control required" name="phone" placeholder="說明(如檢定)" aria-required="true"></div>
+                                </div>
+                            </div>
+                            <a href="#" class="button fullwidth rounded btn-default text-center"><span><i class="fa fa-plus"></i>新增一筆資料</span></a>
+                        </div>
+
+
+
+                        <div class="clearfix"></div>
+                        <div class="hr-title hr-long center"><abbr>專業證照</abbr> </div>
+                        <div class="col-md-12">
+                            <div>
+                                <div class="form-group">
+                                    <div style="line-height: 50px;">&nbsp;<span style="float:right">
+                                        <div class="btn-group" data-toggle="buttons">
+                                            <label class="btn-xs btn btn-default active"><input type="radio" value="1" name="is_activeAdd">公開</label>
+                                            <label class="btn-xs btn btn-default"><input type="radio" value="0" name="is_activeAdd">不公開</label>
+                                        </div>
+                                        <button type="button" class="btn btn-xs btn-danger" style="margin-top:5px;"><i class="fa fa-remove">刪除</i></button>
+                                    </span></div>
+                                </div>
+                                <div class="form-inline">
+                                    <div class="input-group-btn"><input type="text" class="form-control required" name="phone" placeholder="證照名稱" aria-required="true"></div>
+                                    <div class="input-group-btn"><input type="text" class="form-control required" name="phone" placeholder="授予單位" aria-required="true"></div>
+                                    <div class="input-group-btn"><select class="form-control required"><option>取得年份</option></select></div>
+                                    <div class="input-group-btn"><input type="text" class="form-control required" name="phone" placeholder="說明" aria-required="true"></div>
+                                </div>
+                            </div>
+                            <a href="#" class="button fullwidth rounded btn-default text-center"><span><i class="fa fa-plus"></i>新增一筆資料</span></a>
+                        </div>
 
 
 
 
 
+                        <div class="clearfix"></div>
+                        <div class="hr-title hr-long center"><abbr>社團經歷/幹部資歷/榮譽事蹟</abbr> </div>
+                        <div class="col-md-12">
+                            <div>
+                                <div class="form-group">
+                                    <div style="line-height: 50px;">&nbsp;<span style="float:right">
+                                        <div class="btn-group" data-toggle="buttons">
+                                            <label class="btn-xs btn btn-default active"><input type="radio" value="1" name="is_activeAdd">公開</label>
+                                            <label class="btn-xs btn btn-default"><input type="radio" value="0" name="is_activeAdd">不公開</label>
+                                        </div>
+                                        <button type="button" class="btn btn-xs btn-danger" style="margin-top:5px;"><i class="fa fa-remove">刪除</i></button>
+                                    </span></div>
+                                </div>
+                                <div class="form-inline">
+                                    <div class="input-group-btn"><input type="text" class="form-control required" name="phone" placeholder="活動/社團名稱" aria-required="true"></div>
+                                    <div class="input-group-btn"><input type="text" class="form-control required" name="phone" placeholder="職稱" aria-required="true"></div>
+                                    <div class="input-group-btn"><select class="form-control required"><option>2011/10</option></select></div>
+                                    <div class="input-group-btn"><select class="form-control required"><option>2017/10</option></select></div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control required" name="phone" placeholder="職務內容" aria-required="true">
+                                </div>
+                            </div>
+                            <a href="#" class="button fullwidth rounded btn-default text-center"><span><i class="fa fa-plus"></i>新增一筆資料</span></a>
+                        </div>
+
+
+                        <div class="clearfix"></div>
+                        <div class="hr-title hr-long center"><abbr>志工服務經驗</abbr> </div>
+                        <div class="col-md-12">
+                            <div>
+                                <div class="form-group">
+                                    <div style="line-height: 50px;">&nbsp;<span style="float:right">
+                                        <div class="btn-group" data-toggle="buttons">
+                                            <label class="btn-xs btn btn-default active"><input type="radio" value="1" name="is_activeAdd">公開</label>
+                                            <label class="btn-xs btn btn-default"><input type="radio" value="0" name="is_activeAdd">不公開</label>
+                                        </div>
+                                        <button type="button" class="btn btn-xs btn-danger" style="margin-top:5px;"><i class="fa fa-remove">刪除</i></button>
+                                    </span></div>
+                                </div>
+                                <div class="form-inline">
+                                    <div class="input-group-btn"><input type="text" class="form-control required" name="phone" placeholder="服務單位/機構/社團名稱" aria-required="true"></div>
+                                    <div class="input-group-btn"><input type="text" class="form-control required" name="phone" placeholder="職稱" aria-required="true"></div>
+                                    <div class="input-group-btn"><select class="form-control required"><option>2011/10</option></select></div>
+                                    <div class="input-group-btn"><select class="form-control required"><option>2017/10</option></select></div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control required" name="phone" placeholder="參與內容" aria-required="true">
+                                </div>
+                            </div>
+                            <a href="#" class="button fullwidth rounded btn-default text-center"><span><i class="fa fa-plus"></i>新增一筆資料</span></a>
+                        </div>
+
+
+                        <div class="clearfix"></div>
+                        <div class="hr-title hr-long center"><abbr>系所專業/職涯方向/專長</abbr> </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label class="upper" for="name">&nbsp;<span style="float:right">
+                                        <div class="btn-group" data-toggle="buttons">
+                                            <label class="btn-xs btn btn-default active"><input type="radio" value="1" name="is_activeAdd">公開</label>
+                                            <label class="btn-xs btn btn-default"><input type="radio" value="0" name="is_activeAdd">不公開</label>
+                                        </div>
+                                    </span></label>
+                                <textarea class="form-control required" name="comment" rows="9" placeholder="Enter comment" id="comment2" aria-required="true"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="clearfix"></div>
+                        <div class="hr-title hr-long center"><abbr>活動報名經驗</abbr> </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label class="upper" for="name">&nbsp;<span style="float:right">
+                                        <div class="btn-group" data-toggle="buttons">
+                                            <label class="btn-xs btn btn-default active"><input type="radio" value="1" name="is_activeAdd">公開</label>
+                                            <label class="btn-xs btn btn-default"><input type="radio" value="0" name="is_activeAdd">不公開</label>
+                                        </div>
+                                    </span></label>
+                                <textarea class="form-control required" name="comment" rows="9" placeholder="Enter comment" id="comment2" aria-required="true"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="clearfix"></div>
+                        <div class="hr-title hr-long center"><abbr>上傳附件</abbr> </div>
+                        <div class="col-md-12">
+                            
+                            <a href="#" class="button fullwidth rounded btn-default text-center"><span><i class="fa fa-plus"></i>新增一筆資料</span></a>
                         </div>
                     </div>
-
+                        <div class="row m-t-40">
+                            <div class="col-md-12">
+                                <div class="form-group text-center">
+                                    <a href="#" class="button large shark button-3d rounded icon-left"><span>全部清除</span></a>
+                                    <a href="#" class="button large aqua button-3d rounded icon-left"><span>儲存履歷</span></a>
+                                </div>
+                            </div>
+                        </div>
                 </div>
                 </div>
 
             </div>
-        </section>
+        </form></section>
         <!-- END: SECTION -->
 
         <!-- FOOTER -->
