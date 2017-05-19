@@ -227,7 +227,8 @@
                             <div class="col-md-4">
                                 <div class="post-image">
                                     <a href="#">
-                                        <img alt="" src="images/blog/1.jpg">
+                                        <img alt="" id="triggerfile" src="images/blog/1.jpg">
+                                        <input type="file" id="fileInput" style="display: none;">
                                     </a>
                                 </div>
                             </div>
@@ -411,29 +412,10 @@
                         <div class="clearfix"></div>
                         <div class="hr-title hr-long center"><abbr>教育背景</abbr> </div>
                         <div class="col-md-12">
-                            <div>
-                                <div class="form-group">
-                                    <div style="line-height: 50px;">#1<span style="float:right">
-                                        <div class="btn-group" data-toggle="buttons">
-                                            <label class="btn-xs btn btn-default active"><input type="radio" value="1" name="is_activeAdd">公開</label>
-                                            <label class="btn-xs btn btn-default"><input type="radio" value="0" name="is_activeAdd">不公開</label>
-                                        </div>
-                                        <button type="button" class="btn btn-xs btn-danger" style="margin-top:5px;"><i class="fa fa-remove">刪除</i></button>
-                                    </span></div>
-                                </div>
-                                <div class="form-inline">
-                                    <div class="input-group-btn"><select class="form-control required"><option>碩士</option></select></div>
-                                    <div class="input-group-btn"><select class="form-control required"><option>已畢業</option></select></div>
-                                    <div class="input-group-btn"><input type="text" class="form-control required" name="phone" placeholder="學校" aria-required="true"></div>
-                                    <div class="input-group-btn"><input type="text" class="form-control required" name="phone" placeholder="科系" aria-required="true"></div>
-                                    <div class="input-group-btn">從<select class="form-control required"><option>2010/10</option></select></div>
-                                    <div class="input-group-btn">至<select class="form-control required"><option>2017/10</option></select></div>
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control required" name="phone" placeholder="其他備註(如成績.雙主修.輔系等)" aria-required="true">
-                                </div>
+                            <div id="eduBox" class="BoxArea">
+                                
                             </div>
-                            <a href="#" class="button fullwidth rounded btn-default text-center"><span><i class="fa fa-plus"></i>新增一筆資料</span></a>
+                            <a href="javascript:;" class="button fullwidth rounded btn-default text-center plusRow" data-id="eduBox"><span><i class="fa fa-plus"></i>新增一筆資料</span></a>
                         </div>
 
 
@@ -442,31 +424,10 @@
                         <div class="clearfix"></div>
                         <div class="hr-title hr-long center"><abbr>工作經歷</abbr> </div>
                         <div class="col-md-12">
-                            <div>
-                                <div class="form-group">
-                                    <div style="line-height: 50px;">#1<span style="float:right">
-                                        <div class="btn-group" data-toggle="buttons">
-                                            <label class="btn-xs btn btn-default active"><input type="radio" value="1" name="is_activeAdd">公開</label>
-                                            <label class="btn-xs btn btn-default"><input type="radio" value="0" name="is_activeAdd">不公開</label>
-                                        </div>
-                                        <button type="button" class="btn btn-xs btn-danger" style="margin-top:5px;"><i class="fa fa-remove">刪除</i></button>
-                                    </span></div>
-                                </div>
-                                <div class="form-inline">
-                                    <div class="input-group-btn"><input type="text" class="form-control required" name="phone" placeholder="公司名稱" aria-required="true"></div>
-                                    <div class="input-group-btn"><input type="text" class="form-control required" name="phone" placeholder="部門" aria-required="true"></div>
-                                    <div class="input-group-btn"><input type="text" class="form-control required" name="phone" placeholder="職稱" aria-required="true"></div>
-                                    <div class="input-group-btn">從<select class="form-control required"><option>2010/5</option></select></div>
-                                    <div class="input-group-btn">至<select class="form-control required"><option>2017/5</option></select></div>
-                                    <div class="input-group-btn">
-                                        <label><input type="checkbox" name="">仍在職</label>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control required" name="phone" placeholder="工作內容" aria-required="true">
-                                </div>
+                            <div id="workBox" class="BoxArea">
+                                
                             </div>
-                            <a href="#" class="button fullwidth rounded btn-default text-center"><span><i class="fa fa-plus"></i>新增一筆資料</span></a>
+                            <a href="javascript:;" class="button fullwidth rounded btn-default text-center plusRow" data-id="workBox"><span><i class="fa fa-plus"></i>新增一筆資料</span></a>
                         </div>
 
 
@@ -474,26 +435,10 @@
                         <div class="clearfix"></div>
                         <div class="hr-title hr-long center"><abbr>其他語言</abbr> </div>
                         <div class="col-md-12">
-                            <div>
-                                <div class="form-group">
-                                    <div style="line-height: 50px;">&nbsp;<span style="float:right">
-                                        <div class="btn-group" data-toggle="buttons">
-                                            <label class="btn-xs btn btn-default active"><input type="radio" value="1" name="is_activeAdd">公開</label>
-                                            <label class="btn-xs btn btn-default"><input type="radio" value="0" name="is_activeAdd">不公開</label>
-                                        </div>
-                                        <button type="button" class="btn btn-xs btn-danger" style="margin-top:5px;"><i class="fa fa-remove">刪除</i></button>
-                                    </span></div>
-                                </div>
-                                <div class="form-inline">
-                                    <div class="input-group-btn"><input type="text" class="form-control required" name="phone" placeholder="語言" aria-required="true"></div>
-                                    <div class="input-group-btn"><select class="form-control required"><option>聽:略懂</option></select></div>
-                                    <div class="input-group-btn"><select class="form-control required"><option>說:略懂</option></select></div>
-                                    <div class="input-group-btn"><select class="form-control required"><option>讀:略懂</option></select></div>
-                                    <div class="input-group-btn"><select class="form-control required"><option>寫:略懂</option></select></div>
-                                    <div class="input-group-btn"><input type="text" class="form-control required" name="phone" placeholder="說明(如檢定)" aria-required="true"></div>
-                                </div>
+                            <div id="langkBox" class="BoxArea">
+                                
                             </div>
-                            <a href="#" class="button fullwidth rounded btn-default text-center"><span><i class="fa fa-plus"></i>新增一筆資料</span></a>
+                            <a href="javascript:;" class="button fullwidth rounded btn-default text-center plusRow" data-id="langkBox"><span><i class="fa fa-plus"></i>新增一筆資料</span></a>
                         </div>
 
 
@@ -501,24 +446,10 @@
                         <div class="clearfix"></div>
                         <div class="hr-title hr-long center"><abbr>專業證照</abbr> </div>
                         <div class="col-md-12">
-                            <div>
-                                <div class="form-group">
-                                    <div style="line-height: 50px;">&nbsp;<span style="float:right">
-                                        <div class="btn-group" data-toggle="buttons">
-                                            <label class="btn-xs btn btn-default active"><input type="radio" value="1" name="is_activeAdd">公開</label>
-                                            <label class="btn-xs btn btn-default"><input type="radio" value="0" name="is_activeAdd">不公開</label>
-                                        </div>
-                                        <button type="button" class="btn btn-xs btn-danger" style="margin-top:5px;"><i class="fa fa-remove">刪除</i></button>
-                                    </span></div>
-                                </div>
-                                <div class="form-inline">
-                                    <div class="input-group-btn"><input type="text" class="form-control required" name="phone" placeholder="證照名稱" aria-required="true"></div>
-                                    <div class="input-group-btn"><input type="text" class="form-control required" name="phone" placeholder="授予單位" aria-required="true"></div>
-                                    <div class="input-group-btn"><select class="form-control required"><option>取得年份</option></select></div>
-                                    <div class="input-group-btn"><input type="text" class="form-control required" name="phone" placeholder="說明" aria-required="true"></div>
-                                </div>
+                            <div id="perfBox" class="BoxArea">
+                                
                             </div>
-                            <a href="#" class="button fullwidth rounded btn-default text-center"><span><i class="fa fa-plus"></i>新增一筆資料</span></a>
+                            <a href="javascript:;" class="button fullwidth rounded btn-default text-center plusRow" data-id="perfBox"><span><i class="fa fa-plus"></i>新增一筆資料</span></a>
                         </div>
 
 
@@ -528,54 +459,20 @@
                         <div class="clearfix"></div>
                         <div class="hr-title hr-long center"><abbr>社團經歷/幹部資歷/榮譽事蹟</abbr> </div>
                         <div class="col-md-12">
-                            <div>
-                                <div class="form-group">
-                                    <div style="line-height: 50px;">&nbsp;<span style="float:right">
-                                        <div class="btn-group" data-toggle="buttons">
-                                            <label class="btn-xs btn btn-default active"><input type="radio" value="1" name="is_activeAdd">公開</label>
-                                            <label class="btn-xs btn btn-default"><input type="radio" value="0" name="is_activeAdd">不公開</label>
-                                        </div>
-                                        <button type="button" class="btn btn-xs btn-danger" style="margin-top:5px;"><i class="fa fa-remove">刪除</i></button>
-                                    </span></div>
-                                </div>
-                                <div class="form-inline">
-                                    <div class="input-group-btn"><input type="text" class="form-control required" name="phone" placeholder="活動/社團名稱" aria-required="true"></div>
-                                    <div class="input-group-btn"><input type="text" class="form-control required" name="phone" placeholder="職稱" aria-required="true"></div>
-                                    <div class="input-group-btn"><select class="form-control required"><option>2011/10</option></select></div>
-                                    <div class="input-group-btn"><select class="form-control required"><option>2017/10</option></select></div>
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control required" name="phone" placeholder="職務內容" aria-required="true">
-                                </div>
+                            <div id="groupBox" class="BoxArea">
+                                
                             </div>
-                            <a href="#" class="button fullwidth rounded btn-default text-center"><span><i class="fa fa-plus"></i>新增一筆資料</span></a>
+                            <a href="javascript:;" class="button fullwidth rounded btn-default text-center plusRow" data-id="groupBox"><span><i class="fa fa-plus"></i>新增一筆資料</span></a>
                         </div>
 
 
                         <div class="clearfix"></div>
                         <div class="hr-title hr-long center"><abbr>志工服務經驗</abbr> </div>
                         <div class="col-md-12">
-                            <div>
-                                <div class="form-group">
-                                    <div style="line-height: 50px;">&nbsp;<span style="float:right">
-                                        <div class="btn-group" data-toggle="buttons">
-                                            <label class="btn-xs btn btn-default active"><input type="radio" value="1" name="is_activeAdd">公開</label>
-                                            <label class="btn-xs btn btn-default"><input type="radio" value="0" name="is_activeAdd">不公開</label>
-                                        </div>
-                                        <button type="button" class="btn btn-xs btn-danger" style="margin-top:5px;"><i class="fa fa-remove">刪除</i></button>
-                                    </span></div>
-                                </div>
-                                <div class="form-inline">
-                                    <div class="input-group-btn"><input type="text" class="form-control required" name="phone" placeholder="服務單位/機構/社團名稱" aria-required="true"></div>
-                                    <div class="input-group-btn"><input type="text" class="form-control required" name="phone" placeholder="職稱" aria-required="true"></div>
-                                    <div class="input-group-btn"><select class="form-control required"><option>2011/10</option></select></div>
-                                    <div class="input-group-btn"><select class="form-control required"><option>2017/10</option></select></div>
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control required" name="phone" placeholder="參與內容" aria-required="true">
-                                </div>
+                            <div id="serviceBox" class="BoxArea">
+                                
                             </div>
-                            <a href="#" class="button fullwidth rounded btn-default text-center"><span><i class="fa fa-plus"></i>新增一筆資料</span></a>
+                            <a href="javascript:;" class="button fullwidth rounded btn-default text-center plusRow" data-id="serviceBox"><span><i class="fa fa-plus"></i>新增一筆資料</span></a>
                         </div>
 
 
@@ -610,8 +507,12 @@
                         <div class="clearfix"></div>
                         <div class="hr-title hr-long center"><abbr>上傳附件</abbr> </div>
                         <div class="col-md-12">
-                            
-                            <a href="#" class="button fullwidth rounded btn-default text-center"><span><i class="fa fa-plus"></i>新增一筆資料</span></a>
+    <span class="btn btn-success fileinput-button">
+        <i class="glyphicon glyphicon-plus"></i>
+        <span>Select files...</span>
+        <!-- The file input field used as target for the file upload widget -->
+        <input id="fileupload" type="file" name="files[]" multiple="" data-url="伺服器端檔案">
+    </span>
                         </div>
                     </div>
                         <div class="row m-t-40">
@@ -628,7 +529,30 @@
             </div>
         </form></section>
         <!-- END: SECTION -->
-
+<!-- modal -->
+<div class="modal fade in" id="alertModal" tabindex="-1" role="modal" aria-labelledby="modal-label-2" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+                <h4 id="modal-label-2" class="modal-title">提醒</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <p id="alertMessage"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="pull-left">
+                    <button data-dismiss="modal" class="btn btn-b" type="button">關閉</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- modal -->
         <!-- FOOTER for Web -->
         <footer class="background-dark text-grey hidden-xs" id="footer">
             <div class="footer-content">
@@ -808,19 +732,60 @@
 
         <!-- Custom js file -->
         <script src="js/custom.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-file-upload/9.18.0/js/vendor/jquery.ui.widget.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-file-upload/9.18.0/js/jquery.iframe-transport.min.jss"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-file-upload/9.18.0/js/jquery.fileupload.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/blueimp-file-upload/9.18.0/css/jquery.fileupload.min.css"/>
         <script type="text/javascript">
-            $('#portfolio-filter li').bind('click', function() {
-                $('#portfolio-filter li').removeClass('ptf-active');
-                $(this).addClass('ptf-active');
+$(function(){
+    $('#addKeyWord').bind('click',function(){
+
+        var obj = [];
+        var tags = $('#KeyWord').val();
+        tags = tags.split(',');
+        $.each(tags, function( index, val ) {
+            if(val.length > 30){
+                $('#alertMessage').text('標籤字元大於30字無法存入');
+                $('#alertModal').modal('show');
+            } else if(val==''){
+                $('#alertMessage').text('無法存入空白標籤');
+                $('#alertModal').modal('show');
+            } else if($.inArray( val, obj )>=0){
+                $('#alertMessage').text('文章已存在此標籤');
+                $('#alertModal').modal('show');
+            } else {
+                val = val.trim();
+                $('.tags').append('<a href="#">'+val+'</a>');
+            }
+        });
+        $('#KeyWord').val('');
+    });
+
+    $('#triggerfile').bind('click',function(){ $('#fileInput').trigger('click'); });
+
+    $('.plusRow').bind('click',function(){
+        var id = $(this).data('id');
+        $.get('formRow/'+id,function(data){
+            var rand = Math.floor(Math.random() * (99999 - 11111 + 1)) + 11111; 
+            data = data.replace(/{id}/g,rand);
+            $('#'+id).append(data);
+        });
+    });
+    $('.BoxArea').on('click','.cutRow',function(){
+        var id = $(this).data('id');
+        if(confirm('確定要刪除此項目?!')){
+            $('.tr_'+id).remove();
+        }
+    })
+    $('#fileupload').fileupload({
+        dataType: 'json',
+        done: function (e, data) {
+            $.each(data.result.files, function (index, file) {
+                $('<p/>').text(file.name).appendTo(document.body);
             });
-            $('#typeBody td').bind('click', function() {
-                $('#typeBody td').removeClass('BodySelect');
-                $(this).addClass('BodySelect');
-            });
-            $('#areaBody td').bind('click', function() {
-                $('#areaBody td').removeClass('BodySelect');
-                $(this).addClass('BodySelect');
-            });
+        }
+    });
+});
 
         </script>
 
