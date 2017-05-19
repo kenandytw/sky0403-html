@@ -232,8 +232,12 @@
                             <div class="hr-title hr-long center"><abbr>新增報名表單</abbr> </div>
                             <div class="row">
                                 <div class="col-md-12">
+<ul id="sortable">
+  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 1<span style="float: right;"><a href="javascript:;" data-target="#addInput" data-toggle="modal"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a><a href="javascript:;" class="DelLi"><i class="fa fa-trash" aria-hidden="true"></i></a> </span></li>
 
+</ul>
 
+                                    <a href="#" data-target="#addInput" data-toggle="modal" class="button fullwidth rounded btn-default text-center"><span><i class="fa fa-plus"></i>新增一筆資料</span></a>
                                 </div>
                             </div>
                             <div class="row">
@@ -259,6 +263,65 @@
             </div>
 
         </section>
+<!--Modal-->
+
+<div class="modal fade" id="addInput" tabindex="-1" role="modal" aria-labelledby="modal-label-3" aria-hidden="true" style="display: none;">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+                <h4 id="modal-label-3" class="modal-title">更新欄位</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row"><form>
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label class="upper" for="phone">欄位名稱</label>
+                            <input type="text" class="form-control required" name="InputName" id="InputName" placeholder="欄位名稱" aria-required="true">
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label class="upper" for="phone">爛位描述</label>
+                            <input type="text" class="form-control required" name="InputDes" id="InputDes" placeholder="爛位描述" aria-required="true">
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label class="upper" for="phone">表單類型</label>
+                            <div class="col-md-11 col-md-offset-1">
+                                <div class="radio-inline"><label><input type="radio" name="power"> 單選</label></div>
+                                <div class="radio-inline"><label><input type="radio" name="power"> 多選</label></div>
+                                <div class="radio-inline"><label><input type="radio" name="power"> 下拉式選單</label></div>
+                                <div class="radio-inline"><label><input type="radio" name="power"> 文字簡答欄位</label></div>
+                                <div class="radio-inline"><label><input type="radio" name="power"> 文字申請區塊</label></div>
+                                <div class="radio-inline"><label><input type="radio" name="power"> 附加檔案</label></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label class="upper" for="phone">選項</label>
+                            <div id="OptionBox">
+
+                            </div>
+                        </div>
+                        <a href="javascript:;" id="addOptionBtn" class="button fullwidth rounded btn-default text-center"><span><i class="fa fa-plus"></i>新增一筆資料</span></a>
+                    </div>
+                </form></div>
+
+            </div>
+            <div class="modal-footer">
+                <button data-dismiss="modal" class="btn btn-b" type="button" style="margin-bottom:0px;">Close</button>
+                <button class="btn btn-b" type="button" id="SaveInput">Save Changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!--Modal-->
         <!-- FOOTER -->
         <footer class="background-dark text-grey" id="footer">
             <div class="footer-content">
@@ -349,8 +412,42 @@
 
     <!-- Custom js file -->
     <script src="js/custom.js"></script>
+<style>
+  #sortable { list-style-type: none; margin: 0; padding: 0; width: 100%; }
+  #sortable li { margin: 0 5px 5px 5px; padding: 5px; font-size: 1.2em; height: 2.5em; line-height: 1.8em; }
+  .ui-state-highlight { height: 2.5em; line-height: 1.8em; }
+  #sortable li a{margin:0 7px;}
+  </style>
+    <link rel="stylesheet" href="vendor\jquery-ui-1.12.1.custom/jquery-ui.min.css">
+    <script src="vendor\jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+    <script>
+  $( function() {
+    $( "#sortable" ).sortable({
+      placeholder: "ui-state-highlight"
+    });
+    //$( "#sortable" ).disableSelection();
+    $('#addOptionBtn').bind('click',function(){
+        $('#OptionBox').append('<div class="input-group"><input type="text" class="form-control" placeholder="選項內容"><span class="input-group-btn"><button class="btn btn-secondary DelOption" type="button">X</button></span></div>');
+    });
+    $('#OptionBox').on('click','.DelOption',function(){
+        if(confirm('確定要刪除此選項?!')){
+            $(this).parent().parent().remove();
+        }
+    });
+    $('#SaveInput').bind('click',function(){
+        var val = $('#InputName').val();
+        $('#sortable').append('<li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>'+val+'<span style="float: right;"><a href="javascript:;" data-target="#addInput" data-toggle="modal"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a><a href="javascript:;" class="DelLi"><i class="fa fa-trash" aria-hidden="true"></i></a> </span></li>');
+        $('#addInput').modal('hide');
+    });
+    $( "#sortable" ).on('click','.DelLi',function(){
+        if(confirm('確定要刪除此內容?!')){
+            $(this).parent().parent().remove();
+        }
+    });
 
-
+    
+  } );
+  </script>
 
 </body>
 
