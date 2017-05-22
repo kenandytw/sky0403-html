@@ -1,0 +1,17 @@
+<div class="form-group tr_{id}">
+                                    <div style="line-height: 50px;">&nbsp;<span style="float:right">
+                                        <div class="btn-group" data-toggle="buttons">
+                                            <label class="btn-xs btn btn-default active"><input type="radio" value="1" name="is_activeAdd">公開</label>
+                                            <label class="btn-xs btn btn-default"><input type="radio" value="0" name="is_activeAdd">不公開</label>
+                                        </div>
+                                        <button type="button" class="btn btn-xs btn-danger cutRow" data-id="{id}" style="margin-top:5px;"><i class="fa fa-remove">刪除</i></button>
+                                    </span></div>
+                                </div>
+                                <div class="form-inline tr_{id}">
+                                    <div class="input-group-btn"><input type="text" class="form-control required" name="phone" placeholder="語言" aria-required="true"></div>
+                                    <div class="input-group-btn"><select class="form-control required"><option>聽:略懂</option></select></div>
+                                    <div class="input-group-btn"><select class="form-control required"><option>說:略懂</option></select></div>
+                                    <div class="input-group-btn"><select class="form-control required"><option>讀:略懂</option></select></div>
+                                    <div class="input-group-btn"><select class="form-control required"><option>寫:略懂</option></select></div>
+                                    <div class="input-group-btn"><input type="text" class="form-control required" name="phone" placeholder="說明(如檢定)" aria-required="true"></div>
+                                </div>
