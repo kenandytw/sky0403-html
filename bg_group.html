@@ -152,7 +152,21 @@
             <td>1</td>
             <td>John</td>
             <td>Carter</td>
+            <td><img src="images/gallery/20.jpg" class="img-circle" alt="Cinque Terre" width="60" height="60"></td>
             <td>Carter</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>John</td>
+            <td>Carter</td>
+            <td><img src="images/gallery/20.jpg" class="img-circle" alt="Cinque Terre" width="60" height="60"></td>
+            <td>Carter</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>John</td>
+            <td>Carter</td>
+            <td><img src="images/gallery/20.jpg" class="img-circle" alt="Cinque Terre" width="60" height="60"></td>
             <td>Carter</td>
           </tr>
 
@@ -183,19 +197,23 @@
             <th></th>
           </tr>
         </thead>
-        <tbody>
+        <tbody id="groupBody">
           
-          <tr>
+          <tr id="tr_1">
             <td>1</td>
             <td>John</td>
             <td>Carter</td>
             <td>Carter</td>
             <td>Carter</td>
-            <td>Carter</td>
+            <td>
+                <button type="button" class="btn btn-primary btn-xs edit" data-id="1" data-save="0">編輯</button>
+                <button type="button" class="btn btn-danger btn-xs delete" data-id="1">刪除</button>
+            </td>
           </tr>
 
         </tbody>
       </table>
+      <a href="javascript:;" class="button fullwidth rounded btn-default text-center" id="AddUser"><span><i class="fa fa-plus"></i>新增一筆資料</span></a>
     </div>
                                 </div>
                             </div>
@@ -297,9 +315,45 @@
 
     <!-- Custom js file -->
     <script src="js/custom.js"></script>
-
-    <script type="text/javascript">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js"></script>
+<script type="text/javascript">
         $(function() {
+$('#groupBody').on('click','.edit',function(){
+    var id   = $(this).data('id');
+    var save = $(this).data('save');
+    if(save){
+        $('#tr_'+id+' td:eq(2)').html($('#tr_'+id+' td:eq(2)').find('input').val());
+        $('#tr_'+id+' td:eq(4)').text($('#Sel_'+id).val());
+        $(this).text('編輯');
+        $(this).data('save',0);
+    } else {
+        
+        $('#tr_'+id+' td:eq(2)').html('<input class="form-control" value="'+$('#tr_'+id+' td:eq(2)').text()+'">');
+        $('#tr_'+id+' td:eq(4)').html('<select id="Sel_'+id+'" class="selectpicker" multiple><option>首頁燈箱</option><option>用戶列表</option><option>機構列表</option><option>舉辦活動列表</option><option>機構機會列表</option></select>');
+        $('#Sel_'+id).selectpicker();
+
+        $(this).text('完成');
+        $(this).data('save',1);
+    }
+
+});
+$('#groupBody').on('click','.delete',function(){
+    var id = $(this).data('id');
+    $('#tr_'+id).remove();
+});
+
+
+$('#AddUser').bind('click',function(){
+    var num = Math.floor(Math.random() * (9999 - 1000 + 1)) + 1000;  
+    $('#groupBody').append('<tr id="tr_'+num+'"><td>'+num+'</td><td></td><td><input class="form-control" value=""></td><td></td><td><select id="Sel_'+num+'" class="selectpicker" multiple><option>首頁燈箱</option><option>用戶列表</option><option>機構列表</option><option>舉辦活動列表</option><option>機構機會列表</option></select></td><td><button type="button" class="btn btn-primary btn-xs edit" data-id="'+num+'" data-save="1">完成</button><button type="button" class="btn btn-danger btn-xs delete" data-id="'+num+'">刪除</button></td></tr>');
+    $('#Sel_'+num).selectpicker();
+});
+
+
+
+
+
 
         });
     </script>
