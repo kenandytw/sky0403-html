@@ -429,3 +429,7 @@ CUSTOM
     max-width: 500px;
 }
 
+.flex-button {
+    display:flex;
+}
+

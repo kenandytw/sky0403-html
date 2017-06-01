@@ -8,7 +8,7 @@
 
 
     <link rel="shortcut icon" href="">
-    <title>機構管理 > 權限管理 @ Skyline</title>
+    <title>Skyline</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -127,117 +127,110 @@
             </div>
         </header>
         <!-- END: Header -->
-
-
-        <div class="seperator hidden-xs"></div>
-
-        <!-- start Form  background-overlay-->
-        <section class="content">
-
-
-            <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="breadcrumb classic text-left">
-          <ul>
-            <li><a href="#"><i class="fa fa-home"></i></a> </li>
-            <li><a href="#">我的機會</a> </li>
-            <li class="active"><a href="#">機構管理</a> </li>
-            <li class="active"><a href="#">權限管理</a> </li>
-          </ul>
+        <!-- Breadcrumb -->
+        <div class="breadcrumb col-md-12 text-center text-dark">
+            <ul>
+                <li><a href="#"><i class="fa fa-home"></i></a> </li>
+                <li><a href="#">我的機會</a> </li>
+                <li><a href="#">機構管理</a> </li>
+                <li><a href="#">權限管理</a> </li>
+            </ul>
         </div>
-      </div>
-    </div>
-
-
+        <!-- END: Breadcrumb -->
+        <section class="content">
+            <div class="container">
                 <div class="row">
+                    <div class="col-md-10 col-md-offset-1">
+                        <form>
+                            <div class="hr-title hr-long center"><abbr>權限管理</abbr> </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label class="upper">東南亞研究社</label>
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered table-hover">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Row</th>
+                                                        <th>帳號</th>
+                                                        <th>管理</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
 
-                        <div class="col-md-12">
-                            <div class="col-md-6 row">
-
-<div class="table-responsive">
-      <table class="table table-striped">
-        <thead>
-          <tr>
-            <th>Row</th>
-            <th>帳號</th>
-            <th>管理</th>
-          </tr>
-        </thead>
-        <tbody>
-          
-          <tr>
-            <td>1</td>
-            <td>John</td>
-            <td>Carter</td>
-          </tr>
-
-          <tr>
-            <td></td>
-            <td colspan="2"><button type="button" data-target="#modal" data-toggle="modal" class="button large btn-default"><i class="fa fa-plus"></i>新增共同管理人</button></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>John</td>
+                                                        <td>Carter</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="row m-t-40">
+                                            <div class="col-md-12 pager-all">
+                                                <button type="button" data-target="#modal" data-toggle="modal" class="button large black button-3d rounded">新增共同管理人</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-
-                        </div>
-                    
+                        </form>
+                    </div>
                 </div>
-
 
             </div>
 
         </section>
-<!--  modal -->
-<div class="modal fade" id="modal" tabindex="-1" role="modal" aria-labelledby="modal-label" aria-hidden="true" style="display: none;">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                <h4 class="modal-title" id="modal-label">Medium Modal</h4>
-            </div>
-            <div class="modal-body">
-                <div class="row">
-                    <div class="col-sm-12"><form>
+        <!--  modal -->
+        <div class="modal fade" id="modal" tabindex="-1" role="modal" aria-labelledby="modal-label" aria-hidden="true" style="display: none;">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h4 class="modal-title" id="modal-label">新增共同管理人</h4>
+                    </div>
+                    <div class="modal-body">
                         <div class="row">
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <label class="upper" for="phone">帳號</label>
-                                        <input type="text" class="form-control required" name="phone" placeholder="中文全名" aria-required="true">
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <label class="upper" for="phone">活動項目</label>
-                                        <select>
-                                            <option>2017 新創之星 海峽賽區</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <label class="upper" for="phone">賦予權限</label>
-                                        <div class="col-md-11 col-md-offset-1">
-                                            <div class="radio"><label><input type="radio" name="power"> 機構主權限</label></div>
-                                            <div class="radio"><label><input type="radio" name="power"> 活動管理(舉辦/編輯)</label></div>
-                                            <div class="radio"><label><input type="radio" name="power"> 提名名單資訊管理</label></div>
+                            <div class="col-sm-12">
+                                <form>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label class="upper" for="phone">帳號</label>
+                                                <input type="text" class="form-control required" name="phone" placeholder="中文全名" aria-required="true">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label class="upper" for="phone">活動項目</label>
+                                                <select class="form-control required"><option>請選擇</option></select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label class="upper" for="phone">賦予權限</label>
+                                                <div class="col-md-12">
+                                                    <div class="radio"><label><input type="radio" name="power"> 機構主權限</label></div>
+                                                    <div class="radio"><label><input type="radio" name="power"> 活動管理(舉辦/編輯)</label></div>
+                                                    <div class="radio"><label><input type="radio" name="power"> 提名名單資訊管理</label></div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
+                                </form>
+                            </div>
                         </div>
-                    </form></div>
+                    </div>
+                    <div class="row m-t-40 flex-button pager-all">
+                        <div class="col-md-12">
+                            <a class="button large shark button-3d rounded " data-dismiss="modal"><span>關閉</span></a>
+                            <a class="button large aqua button-3d rounded "><span>儲存</span></a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-b" style="margin-bottom:0px;" data-dismiss="modal">關閉</button>
-                <button type="button" class="btn btn-b">儲存</button>
-            </div>
         </div>
-    </div>
-</div>
-<!--  modal -->
+        <!--  modal -->
         <!-- FOOTER -->
         <footer class="background-dark text-grey" id="footer">
             <div class="footer-content">
@@ -249,8 +242,10 @@
                                     <img src="images/basic/Skyline-logo-footer.png" alt="Polo Logo">
                                 </div>
                             </div>
-                            <div class="col-md-12"><p style="margin-top: 12px;">地表最挺青年的國際機會平台.
-                                </p></div>
+                            <div class="col-md-12">
+                                <p style="margin-top: 12px;">地表最挺青年的國際機會平台.
+                                </p>
+                            </div>
                         </div>
                         <div class="col-md-6">
                             <div class="col-md-3">
@@ -284,7 +279,7 @@
                                 </div>
                             </div>
                             <div class="col-md-3">
-                                <div class="widget clearfix widget-contact-us" >
+                                <div class="widget clearfix widget-contact-us">
                                     <h4 class="widget-title">聯繫我們</h4>
                                     <ul class="list-simple">
                                         <li><a href="mailto:hello@skyline.tw">hello@skyline.tw</a></li>
@@ -314,24 +309,25 @@
         </footer>
         <!-- END: FOOTER -->
     </div>
-        <!-- END: WRAPPER -->
+    <!-- END: WRAPPER -->
 
-        <!-- GO TOP BUTTON -->
-        <a class="gototop gototop-button" href="#"><i class="fa fa-chevron-up"></i></a>
+    <!-- GO TOP BUTTON -->
+    <a class="gototop gototop-button" href="#"><i class="fa fa-chevron-up"></i></a>
 
-        <!-- Theme Base, Components and Settings -->
-        <script src="js/theme-functions.js"></script>
+    <!-- Theme Base, Components and Settings -->
+    <script src="js/theme-functions.js"></script>
 
-        <!-- Custom js file -->
-        <script src="js/custom.js"></script>
+    <!-- Custom js file -->
+    <script src="js/custom.js"></script>
 
-<script type="text/javascript">
-$(function() {
+    <script type="text/javascript">
+        $(function() {
 
 
-    
-});
-</script>
+
+        });
+
+    </script>
 </body>
 
 </html>

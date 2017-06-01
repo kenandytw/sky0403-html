@@ -253,24 +253,35 @@
                     <div class="hr-title hr-long center"><abbr>機構介紹</abbr> </div>
                     <div class="row">
                         <div class="col-md-12">
-                            <div class="col-md-12">
                                 <div class="form-group">
                                     <label class="upper" for="comment">機構介紹</label>
                                     <textarea class="form-control required" name="comment" rows="9" placeholder="Enter comment" id="comment2" aria-required="true"></textarea>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="hr-title hr-long center"><abbr>上傳機構照片</abbr> </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <div class="actImgBox">
+                                    <img src="images/team/2.jpg">
+
+                                    <span id="actImgUpload"><a class="button large black button-3d rounded icon-left m-t-10"><span><i class="fa fa-plus"></i>新增圖片</span></a></span>
+                                    <input type="file" id="actImgInput" style="display: none;">
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                        <div class="row m-t-40">
-                            <div class="col-md-6">
+                    <div class="row m-t-40 flex-button">
+                            <div class="col-md-6 col-xs-6">
                                 <button type="reset" class="button large red button-3d rounded ">全部清除</button>
                             </div>
-                            <div class="col-md-6 text-right">
+                            <div class="col-md-6 col-xs-6 text-right">
                                 <a class="button large shark button-3d rounded " href="javascript:;" id="nextBtn"><span>閱讀使用條款</span></a>
                             </div>
                         </div>
-                    <div class="row" style="display: none;" id="checkform">
+                    <div class="row m-t-40" style="display: none;" id="checkform">
                         <div class="row">
                             <div class="col-md-12" style="border:3px solid #eee;padding: 5px auto;">
                                 <p>使用條款內容</p>
@@ -278,8 +289,8 @@
                             </div>
 
                         </div>
-                        <div class="row">
-                            <div class="col-md-12 text-right">
+                        <div class="row m-t-40">
+                            <div class="col-md-12 pager-all">
                                 <button type="submit" class="button large aqua button-3d rounded ">提出申請</button>
                             </div>
                         </div>
