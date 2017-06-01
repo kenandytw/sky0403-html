@@ -128,152 +128,130 @@
         </header>
         <!-- END: Header -->
 
-
-        <div class="seperator hidden-xs"></div>
-
-        <!-- start Form  background-overlay-->
-        <section class="content">
-            <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="breadcrumb classic text-left">
-          <ul>
-            <li><a href="#"><i class="fa fa-home"></i></a> </li>
-            <li><a href="#">我的機會</a> </li>
-            <li class="active"><a href="#">新增機構</a> </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-            <!-- Breadcrumb -->
-        <div class="breadcrumb col-md-12 text-left">
+        <!-- Breadcrumb -->
+        <div class="breadcrumb col-md-12 text-center text-dark">
             <ul>
-                <li style="color:red;">Step 1. 活動資訊</li>
-                <li>Step 2. 建立報名表</li>
+                <li><a href="#"><i class="fa fa-home"></i></a> </li>
+                <li><a href="#">我的機會</a> </li>
+                <li><a href="#">新增機構</a> </li>
             </ul>
         </div>
         <!-- END: Breadcrumb -->
-                <!--div class="text-center text-light">
-                    <hr class="space">
-                    <h1 class="heading-jumbo">Skyline</h1>
-                    <p class="lead">說名</p>
-                </div>
-                <hr class="space"--><form>
-                <div class="row" id="writeFrom">
-
-                        <div class="col-md-12">
-                            <div class="col-md-6 row">
-
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <label class="upper" for="phone">中文全名</label>
-                                        <input type="text" class="form-control required" name="phone" placeholder="中文全名" aria-required="true">
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <label class="upper" for="phone">英文全名</label>
-                                        <input type="text" class="form-control required" name="phone" placeholder="英文全名" aria-required="true">
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <label class="upper" for="phone">官方網站</label>
-                                        <input type="url" class="form-control required" name="phone" placeholder="官方網站" ria-required="true">
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <label class="upper" for="phone">FB紛絲團</label>
-                                        <input type="url" class="form-control required" name="phone" placeholder="FB紛絲團" aria-required="true">
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <label class="upper" for="phone">機構統編</label>
-                                        <input type="number" class="form-control required" name="phone" placeholder="機構統編" aria-required="true">
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <label class="upper" for="phone">機構EMail</label>
-                                        <input type="email" class="form-control required" name="phone" placeholder="機構EMail" aria-required="true">
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <label class="upper" for="phone">專頁網址</label>
-                                        <div class="input-group">
-                                          <input type="url" class="form-control" aria-required="true">
-                                          <div class="input-group-btn">
-                                            <button type="button" class="btn btn-default">設定ID</button>
-                                          </div>
-                                        </div><div>為機構專頁設址一組固定網址(5~20字的英文字或英數組合),方便活動宣傳</div>
-                                    </div>
-                                </div>
-                            
-
-
-                            </div>
-                            <div class="col-md-4 col-md-offset-2">
-                                <img src="images/blog/1.jpg" id="triggerfile" style="border:2px solid #333;width: 100%;margin-top: 37px;" />
-                                <input type="file" id="fileInput" style="display: none;">
+        <!-- Step Line -->
+        <div class="text-center">
+            <h5>舉辦活動</h5>
+            <div class="breadcrumb text-center fancy">
+                <ul>
+                    <li><a href="#">Step1.填寫機後資訊</a> </li>
+                    <li class="active"><a href="#">Step2.確認使用條款</a> </li>
+                </ul>
+            </div>
+        </div>
+        <!-- END: Step Line -->
+        <!-- start Form  background-overlay-->
+        <section class="content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1">
+                <form>
+                    <div class="hr-title hr-long center"><abbr>機構資訊</abbr> </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="upper" for="phone">中文全名</label>
+                                <input type="text" class="form-control required" name="phone" placeholder="中文全名" aria-required="true">
                             </div>
                         </div>
-                        <div class="col-md-12">
-                            <div class="col-md-12 ">
-                                    <div class="form-group">
-                                        <label class="upper" for="comment">機構負責人</label>
-
-                                            <div class="col-md-3 col-md-offset-1">
-                                                <div class="form-group">
-                                                    <label class="upper" for="phone">姓名</label>
-                                                    <input type="text" class="form-control required" name="phone" placeholder="姓名" id="phone2" aria-required="true">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-3">
-                                                <div class="form-group">
-                                                    <label class="upper" for="phone">電話</label>
-                                                    <input type="text" class="form-control required" name="phone" placeholder="電話" id="phone2" aria-required="true">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="form-group">
-                                                    <label class="upper" for="phone">Email</label>
-                                                    <input type="text" class="form-control required" name="phone" placeholder="Email" id="phone2" aria-required="true">
-                                                </div>
-                                            </div>
-
-
-
-
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="upper" for="phone">英文全名</label>
+                                <input type="text" class="form-control required" name="phone" placeholder="英文全名" aria-required="true">
+                            </div>
+                        </div> 
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="upper" for="phone">官方網站</label>
+                                <input type="url" class="form-control required" name="phone" placeholder="官方網站" ria-required="true">
+                            </div>
+                        </div> 
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="upper" for="phone">FB紛絲團</label>
+                                <input type="url" class="form-control required" name="phone" placeholder="FB紛絲團" aria-required="true">
+                            </div>
+                        </div> 
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="upper" for="phone">機構統編</label>
+                                <input type="number" class="form-control required" name="phone" placeholder="機構統編" aria-required="true">
+                            </div>
+                        </div> 
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="upper" for="phone">機構EMail</label>
+                                <input type="email" class="form-control required" name="phone" placeholder="機構EMail" aria-required="true">
+                            </div>
+                        </div> 
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="upper" for="phone">專頁網址</label>
+                                <div class="input-group">
+                                    <input type="url" class="form-control" aria-required="true">
+                                    <div class="input-group-btn">
+                                        <button type="button" class="btn btn-default">設定ID</button>
                                     </div>
                                 </div>
-                        </div>
-
-                        <div class="col-md-12">
-                            <div class="col-md-12">
-                                <div class="form-inline">
-                                    <label class="upper" for="comment">機構所在地</label>
-                                    <div class="input-group">
-                                        <div class="input-group-btn"><select class="form-control required"><option>國家</option></select></div>
-                                        <input type="text" class="form-control required" name="phone" placeholder="郵遞區號" aria-required="true">
-                                    </div>
-                                </div>
-                                
+                                <div>為機構專頁設址一組固定網址(5~20字的英文字或英數組合),方便活動宣傳</div>
+                            </div>
+                        </div>     
+                    </div>
+                    <div class="hr-title hr-long center"><abbr>機構負責人</abbr> </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="upper" for="phone">姓名</label>
+                                <input type="text" class="form-control required" name="phone" placeholder="姓名" id="phone2" aria-required="true">
+                            </div>
+                        </div> 
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="upper" for="phone">電話</label>
+                                <input type="text" class="form-control required" name="phone" placeholder="電話" id="phone2" aria-required="true">
+                            </div>
+                        </div> 
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="upper" for="phone">Email</label>
+                                <input type="text" class="form-control required" name="phone" placeholder="Email" id="phone2" aria-required="true">
                             </div>
                         </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="upper" for="phone">Email</label>
+                                <input type="text" class="form-control required" name="phone" placeholder="Email" id="phone2" aria-required="true">
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="hr-title hr-long center"><abbr>機構所在地</abbr> </div>
+                    <div class="row">
                         <div class="col-md-12">
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <label class="upper" for="comment"></label>
-                                    <input type="text" class="form-control required" name="phone" placeholder="地址" id="phone2" aria-required="true">
+                            <div class="form-inline">
+                                <div class="input-group">
+                                    <div class="input-group-btn"><select class="form-control required" style="height: 46px;"><option>國家</option></select></div>
+                                    <input type="text" class="form-control required" name="phone" placeholder="郵遞區號" aria-required="true">
                                 </div>
                             </div>
+
                         </div>
-
-
-                        
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label class="upper" for="comment"></label>
+                                <input type="text" class="form-control required" name="phone" placeholder="地址" id="phone2" aria-required="true">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hr-title hr-long center"><abbr>機構介紹</abbr> </div>
+                    <div class="row">
                         <div class="col-md-12">
                             <div class="col-md-12">
                                 <div class="form-group">
@@ -282,41 +260,34 @@
                                 </div>
                             </div>
                         </div>
-
-                        
+                    </div>
 
                         <div class="row m-t-40">
                             <div class="col-md-6">
-                                <button type="reset" class="button large border effect aqua button-3d fill-vertical">全部清除</button>
+                                <button type="reset" class="button large red button-3d rounded ">全部清除</button>
                             </div>
                             <div class="col-md-6 text-right">
-<a class="button large border effect aqua button-3d fill-vertical" href="javascript:;" id="nextBtn"><span>下一步驟</span></a>
+                                <a class="button large shark button-3d rounded " href="javascript:;" id="nextBtn"><span>閱讀使用條款</span></a>
                             </div>
                         </div>
-                    
-                </div>
+                    <div class="row" style="display: none;" id="checkform">
+                        <div class="row">
+                            <div class="col-md-12" style="border:3px solid #eee;padding: 5px auto;">
+                                <p>使用條款內容</p>
+                                <div style="border-top:3px solid #eee;margin:5px;padding:10px;"><label class="checkbox-inline"><input type="checkbox" value="">本機構同意以上使用條款</label></div>
+                            </div>
 
-                <div class="row" style="display: none;" id="checkform">
-                    <div class="row">
-                        <div class="col-md-12" style="border:3px solid #eee;padding: 5px auto;">
-                            <p>引言</p>
-                            <p>引言</p>
-                            <p>引言</p>
-                            <p>引言</p>
-                            <p>引言</p>
-                            <div style="border-top:3px solid #eee;margin:5px;padding:10px;"><label class="checkbox-inline"><input type="checkbox" value="">本機構同意以上使用條款</label></div>
                         </div>
-
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12 text-right">
-                            <button type="submit" class="button large btn-default">提出申請</button>
+                        <div class="row">
+                            <div class="col-md-12 text-right">
+                                <button type="submit" class="button large aqua button-3d rounded ">提出申請</button>
+                            </div>
                         </div>
                     </div>
-                </div>
 
                 </form>
-
+                    </div>
+                </div>
 
             </div>
 
@@ -332,8 +303,10 @@
                                     <img src="images/basic/Skyline-logo-footer.png" alt="Polo Logo">
                                 </div>
                             </div>
-                            <div class="col-md-12"><p style="margin-top: 12px;">地表最挺青年的國際機會平台.
-                                </p></div>
+                            <div class="col-md-12">
+                                <p style="margin-top: 12px;">地表最挺青年的國際機會平台.
+                                </p>
+                            </div>
                         </div>
                         <div class="col-md-6">
                             <div class="col-md-3">
@@ -367,7 +340,7 @@
                                 </div>
                             </div>
                             <div class="col-md-3">
-                                <div class="widget clearfix widget-contact-us" >
+                                <div class="widget clearfix widget-contact-us">
                                     <h4 class="widget-title">聯繫我們</h4>
                                     <ul class="list-simple">
                                         <li><a href="mailto:hello@skyline.tw">hello@skyline.tw</a></li>
@@ -397,31 +370,34 @@
         </footer>
         <!-- END: FOOTER -->
     </div>
-        <!-- END: WRAPPER -->
+    <!-- END: WRAPPER -->
 
-        <!-- GO TOP BUTTON -->
-        <a class="gototop gototop-button" href="#"><i class="fa fa-chevron-up"></i></a>
+    <!-- GO TOP BUTTON -->
+    <a class="gototop gototop-button" href="#"><i class="fa fa-chevron-up"></i></a>
 
-        <!-- Theme Base, Components and Settings -->
-        <script src="js/theme-functions.js"></script>
+    <!-- Theme Base, Components and Settings -->
+    <script src="js/theme-functions.js"></script>
 
-        <!-- Custom js file -->
-        <script src="js/custom.js"></script>
+    <!-- Custom js file -->
+    <script src="js/custom.js"></script>
 
-<script type="text/javascript">
-$(function() {
+    <script type="text/javascript">
+        $(function() {
 
-    $('#nextBtn').bind('click',function(){
-        $('#writeFrom').hide();
-        $('#checkform').show();
-        $('.container .breadcrumb ul li:eq(0)').css('color','');
-        $('.container .breadcrumb ul li:eq(1)').css('color','red');
+            $('#nextBtn').bind('click', function() {
+                $('#writeFrom').hide();
+                $('#checkform').show();
+                $('.container .breadcrumb ul li:eq(0)').css('color', '');
+                $('.container .breadcrumb ul li:eq(1)').css('color', 'red');
 
-    });
-    $('#triggerfile').bind('click',function(){ $('#fileInput').trigger('click'); });
-    
-});
-</script>
+            });
+            $('#triggerfile').bind('click', function() {
+                $('#fileInput').trigger('click');
+            });
+
+        });
+
+    </script>
 </body>
 
 </html>

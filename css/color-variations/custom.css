@@ -414,5 +414,18 @@ CUSTOM
     width: 150px;
     height: auto;
 }
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active{
+    border: 2px solid #337ab7 !important; 
+    background: #fff !important;
+    font-weight: normal;
+    color: #454545;
+}
 
+.maxwidth320{
+    max-width: 320px;
+}
+
+.maxwidth500{
+    max-width: 500px;
+}
 
