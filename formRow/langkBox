@@ -1,6 +1,6 @@
-<div class="form-group tr_{id}">
+<div class="tr_{id}">
                                     <div style="line-height: 50px;">&nbsp;<span style="float:right">
-                                        <div class="btn-group" data-toggle="buttons">
+                                        <div class="btn-group" data-toggle="buttons" style="margin-top:7px;">
                                             <label class="btn-xs btn btn-default active"><input type="radio" value="1" name="is_activeAdd">公開</label>
                                             <label class="btn-xs btn btn-default"><input type="radio" value="0" name="is_activeAdd">不公開</label>
                                         </div>

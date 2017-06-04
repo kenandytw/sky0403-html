@@ -241,7 +241,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
+                                            </div><div class="clearfix"></div>
                                             <div class="col-md-4">
                                                 <div class="form-group">
                                                     <label class="upper" for="comment">國籍</label>
@@ -259,7 +259,7 @@
                                                     <label class="upper" for="comment">護照號碼/台胞證碼</label>
                                                     <input type="text" class="form-control required" name="phone" placeholder="護照號碼/台胞證碼" id="phone2" aria-required="true">
                                                 </div>
-                                            </div>
+                                            </div><div class="clearfix"></div>
                                             <div class="col-md-4">
                                                 <div class="form-group">
                                                     <label class="upper" for="comment">手機號碼</label>
@@ -273,14 +273,12 @@
                                                 </div>
                                             </div>
                                             <div class="col-md-3">
-                                                <div class="form-group">
                                                     <div class="btn-group" data-toggle="buttons" style="margin-top:26px;">
                                                         <label class="btn btn-default active">
                                                         <input type="radio" value="1" name="is_activeAdd">公開</label>
                                                         <label class="btn btn-default">
                                                         <input type="radio" value="0" name="is_activeAdd">不公開</label>
                                                     </div>
-                                                </div>
                                             </div>
                                             <div class="col-md-12">
                                                 <div class="form-inline">
@@ -312,12 +310,10 @@
                                                 </div>
                                             </div>
                                             <div class="col-md-3">
-                                                <div class="form-group">
                                                     <div class="btn-group" data-toggle="buttons" style="margin-top:26px;">
                                                         <label class="btn btn-default active"><input type="radio" value="1" name="is_activeAdd">公開</label>
                                                         <label class="btn btn-default"><input type="radio" value="0" name="is_activeAdd">不公開</label>
                                                     </div>
-                                                </div>
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="form-group">
@@ -332,12 +328,10 @@
                                                 </div>
                                             </div>
                                             <div class="col-md-3">
-                                                <div class="form-group">
                                                     <div class="btn-group" data-toggle="buttons" style="margin-top:26px;">
                                                         <label class="btn btn-default active"><input type="radio" value="1" name="is_activeAdd">公開</label>
                                                         <label class="btn btn-default"><input type="radio" value="0" name="is_activeAdd">不公開</label>
                                                     </div>
-                                                </div>
                                             </div>
                                             <div class="col-md-12">
                                                 <label class="upper" for="comment">飲食習慣</label>
@@ -431,30 +425,29 @@
                                     <div class="clearfix"></div>
                                     <div class="hr-title hr-long center"><abbr>系所專業/職涯方向/專長</abbr> </div>
                                     <div class="col-md-12">
-                                        <div class="form-group">
-                                            <label class="upper" for="name">&nbsp;<span style="float:right">
-                                                <div class="btn-group" data-toggle="buttons">
-                                                    <label class="btn-xs btn btn-default active"><input type="radio" value="1" name="is_activeAdd">公開</label>
+                                        
+                                    <label class="upper" for="name" style="float:right">&nbsp;<span>
+                                        <div class="btn-group" data-toggle="buttons">
+                                            <label class="btn-xs btn btn-default active"><input type="radio" value="1" name="is_activeAdd">公開</label>
                                             <label class="btn-xs btn btn-default"><input type="radio" value="0" name="is_activeAdd">不公開</label>
                                         </div>
-                                        </span>
-                                        </label>
+                                    </span></label>
+                                    <div class="form-group">
                                         <textarea class="form-control required" name="comment" rows="9" placeholder="Enter comment" id="comment2" aria-required="true"></textarea>
                                     </div>
                                 </div>
                                 <div class="clearfix"></div>
                                 <div class="hr-title hr-long center"><abbr>活動報名經驗</abbr> </div>
                                 <div class="col-md-12">
+                                <label class="upper" for="name" style="float:right">&nbsp;<span>
+                                        <div class="btn-group" data-toggle="buttons">
+                                            <label class="btn-xs btn btn-default active"><input type="radio" value="1" name="is_activeAdd">公開</label>
+                                            <label class="btn-xs btn btn-default"><input type="radio" value="0" name="is_activeAdd">不公開</label>
+                                        </div>
+                                    </span></label>
                                     <div class="form-group">
-                                        <label class="upper" for="name">&nbsp;<span style="float:right">
-                                                <div class="btn-group" data-toggle="buttons">
-                                                    <label class="btn-xs btn btn-default active"><input type="radio" value="1" name="is_activeAdd">公開</label>
-                                        <label class="btn-xs btn btn-default"><input type="radio" value="0" name="is_activeAdd">不公開</label>
+                                        <textarea class="form-control required" name="comment" rows="9" placeholder="Enter comment" id="comment2" aria-required="true"></textarea>
                                     </div>
-                                    </span>
-                                    </label>
-                                    <textarea class="form-control required" name="comment" rows="9" placeholder="Enter comment" id="comment2" aria-required="true"></textarea>
-                                </div>
                             </div>
                             <div class="clearfix"></div>
                             <div class="hr-title hr-long center"><abbr>上傳機構照片</abbr> </div>
@@ -700,7 +693,7 @@
     <!-- Custom js file -->
     <script src="js/custom.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-file-upload/9.18.0/js/vendor/jquery.ui.widget.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-file-upload/9.18.0/js/jquery.iframe-transport.min.jss"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-file-upload/9.18.0/js/jquery.iframe-transport.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-file-upload/9.18.0/js/jquery.fileupload.min.js"></script>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/blueimp-file-upload/9.18.0/css/jquery.fileupload.min.css" />
     <script type="text/javascript">
