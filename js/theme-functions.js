@@ -250,7 +250,7 @@ var INSPIRO = {};
 
             var headerHeight = $header.height(),
                 topbarHeight = $topbar.height(),
-                windowHeight = $(window).height(),
+                // windowHeight = $(window).height(),
                 screenHeightExtra = headerHeight + topbarHeight,
                 sliderFullscreen = $('#slider').hasClass('slider-fullscreen'),
                 screenRatio = $('#slider').hasClass('slider-fullscreen') ? 1 : 1.28,
