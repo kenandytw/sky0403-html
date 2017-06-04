@@ -460,22 +460,18 @@
                             <div class="hr-title hr-long center"><abbr>上傳機構照片</abbr> </div>
                                     <div class="row">
                                         <div class="col-md-12">
-                                            <div class="form-group">
-                                                <div class="actImgBox">
-                                                    <div class="col-md-4">
-                                                        <div class="post-image">
-                                                            <a href="#">
-                                                                <img alt="" id="triggerfile" src="images/blog/1.jpg">
-                                                                <input type="file" id="fileInput" style="display: none;">
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                            <span class="btn btn-success fileinput-button">
+                                                <i class="glyphicon glyphicon-plus"></i>
+                                                <span>上傳照片</span>
+                                                <!-- The file input field used as target for the file upload widget -->
+                                                <input id="fileupload" type="file" name="files[]" multiple="" data-url="伺服器端檔案">
+                                            </span>
                                         </div>
-                                    </div>
+                                    </div>    
+                                        
                             <div class="hr-title hr-long center"><abbr>上傳附件</abbr> </div>
-                            <div class="col-md-12">
+                                    <div class="row">
+                               <div class="col-md-12">
                                 <span class="btn btn-success fileinput-button">
                                             <i class="glyphicon glyphicon-plus"></i>
                                             <span>選擇檔案</span>
@@ -483,11 +479,12 @@
                                 <input id="fileupload" type="file" name="files[]" multiple="" data-url="伺服器端檔案">
                                 </span>
                             </div>
+                                    </div>
                         </div>
                         <div class="row m-t-40">
                             <div class="col-md-12">
                                 <div class="form-group text-center">
-                                    <a href="#" class="button large shark button-3d rounded icon-left"><span>全部清除</span></a>
+                                    <a href="#" class="button large red button-3d rounded icon-left"><span>全部清除</span></a>
                                     <a href="#" class="button large aqua button-3d rounded icon-left"><span>儲存履歷</span></a>
                                 </div>
                             </div>
