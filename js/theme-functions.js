@@ -287,12 +287,13 @@ var INSPIRO = {};
             } else {
                 sliderTargetElements.css('height', responsiveHeightxs + 'px');
             }
-
-            if($('.noHeight').exists()){
-                $('.inspiro-slider.noHeight').css('height', '468px');
-                $('.inspiro-slider.noHeight .owl-stage-outer').css('height', '468px');
-                $('.inspiro-slider.noHeight .owl-stage').css('height', '468px');
-                $('.inspiro-slider.noHeight .slide').css('height', '468px');
+            if ($body.hasClass('device-lg') || $body.hasClass('device-md') || $body.hasClass('device-sm')) {
+                if($('.noHeight').exists()){
+                    $('.inspiro-slider.noHeight').css('height', '468px');
+                    $('.inspiro-slider.noHeight .owl-stage-outer').css('height', '468px');
+                    $('.inspiro-slider.noHeight .owl-stage').css('height', '468px');
+                    $('.inspiro-slider.noHeight .slide').css('height', '468px');
+                }
             }
 
         }
