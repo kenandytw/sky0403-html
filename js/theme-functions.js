@@ -261,29 +261,38 @@ var INSPIRO = {};
 
 
             if ($body.hasClass('device-lg') || $body.hasClass('device-md') || $body.hasClass('device-sm')) {
-                if (transparentHeader) {
-                    if (sliderFullscreen) {
-                        sliderTargetElements.css('height', windowHeight + 'px');
-                    } else {
-                        if (!$header.hasClass(".header-transparent")) {
-                            $(".inspiro-slider .slide").css('padding-top', screenHeightExtra + 'px');
-                        }
-                        if (!customHeight) {
-                            sliderTargetElements.css('height', windowHeight / screenRatio + 'px');
+
+                    if (transparentHeader) {
+                        if (sliderFullscreen) {
+                            sliderTargetElements.css('height', windowHeight + 'px');
                         } else {
-                            sliderTargetElements.css('height', customHeight + 'px');
+                            if (!$header.hasClass(".header-transparent")) {
+                                $(".inspiro-slider .slide").css('padding-top', screenHeightExtra + 'px');
+                            }
+                            if (!customHeight) {
+                                sliderTargetElements.css('height', windowHeight / screenRatio + 'px');
+                            } else {
+                                sliderTargetElements.css('height', customHeight + 'px');
+                            }
+                        }
+
+                    } else {
+                        if (sliderFullscreen) {
+                            sliderTargetElements.css('height', windowHeight - screenHeightExtra + 'px');
+                        } else {
+                            sliderTargetElements.css('height', windowHeight / screenRatio - screenHeightExtra + 'px');
                         }
                     }
 
-                } else {
-                    if (sliderFullscreen) {
-                        sliderTargetElements.css('height', windowHeight - screenHeightExtra + 'px');
-                    } else {
-                        sliderTargetElements.css('height', windowHeight / screenRatio - screenHeightExtra + 'px');
-                    }
-                }
             } else {
                 sliderTargetElements.css('height', responsiveHeightxs + 'px');
+            }
+
+            if($('.noHeight').exists()){
+                $('.inspiro-slider.noHeight').css('height', '468px');
+                $('.inspiro-slider.noHeight .owl-stage-outer').css('height', '468px');
+                $('.inspiro-slider.noHeight .owl-stage').css('height', '468px');
+                $('.inspiro-slider.noHeight .slide').css('height', '468px');
             }
 
         }
@@ -338,7 +347,7 @@ var INSPIRO = {};
                             autoplay: true,
                             dots: true,
                             autoplayHoverPause: true,
-                            navigation: true,
+                            navigation: false,
                             items: 1,
                             smartSpeed: 1300,
                             singleItem: true,
