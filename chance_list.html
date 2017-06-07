@@ -139,7 +139,7 @@
             </ul>
         </div>
         <!-- END: Breadcrumb -->
-        
+
         <!-- END: Filter -->
         <section class="content">
             <div class="col-md-12 visible-xs text-center">
@@ -149,6 +149,9 @@
                     </div>
                     <div class="col-md-12">
                         <a href="#" class="button large aqua button-3d rounded icon-left chance_button"><span>建立活動</span></a>
+                    </div>
+                    <div class="col-md-12">
+                        <a href="#" class="button large shark button-3d rounded icon-left"><span>探索所有機會</span></a>
                     </div>
                 </div>
             </div>
@@ -160,7 +163,8 @@
                             <tbody id="typeBody">
                                 <tr>
                                     <th style="width: 60px;">
-                                        <h4>類型</h4></th>
+                                        <h4>類型</h4>
+                                    </th>
                                     <td>短期營隊</td>
                                     <td>志工計畫</td>
                                     <td>交流參訪</td>
@@ -183,7 +187,8 @@
                             <tbody id="areaBody">
                                 <tr>
                                     <th style="width: 60px;">
-                                        <h4>地區</h4></th>
+                                        <h4>地區</h4>
+                                    </th>
                                     <td>亞洲</td>
                                     <td>美洲</td>
                                     <td>歐洲</td>
@@ -203,13 +208,16 @@
                             <div class="col-md-6 text-left ">
                                 <a href="#" class="button large aqua button-3d rounded icon-left"><span>建立活動</span></a>
                             </div>
+                            <div class="col-md-12">
+                                <a href="#" class="button large shark button-3d rounded icon-left"><span>探索所有機會</span></a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>    
+            </div>
         </section>
         <!-- END: Filter -->
-        
+
         <div class="seperator hidden-xs"></div>
 
         <!-- Event -->
@@ -225,7 +233,7 @@
                                 <option>按上傳時間</option>
                                 <option>按更新時間</option>
                             </select>
-                        </div>   
+                        </div>
                     </div>
                     <div class="col-md-12 col-sm-12 post-content  post-3-columns">
                         <!-- Event post-->
@@ -255,19 +263,23 @@
                         <div class="col-md-12">
                             <nav class="text-center">
                                 <ul class="pagination pagination-fancy">
-                                    <li> <a href="#" aria-label="Previous"> <span aria-hidden="true"><i class="fa fa-angle-left"></i></span> </a> </li>
+                                    <li>
+                                        <a href="#" aria-label="Previous"> <span aria-hidden="true"><i class="fa fa-angle-left"></i></span> </a>
+                                    </li>
                                     <li><a href="#">1</a> </li>
                                     <li><a href="#">2</a> </li>
                                     <li class="active"><a href="#">3</a> </li>
                                     <li><a href="#">4</a> </li>
                                     <li><a href="#">5</a> </li>
-                                    <li> <a href="#" aria-label="Next"> <span aria-hidden="true"><i class="fa fa-angle-right"></i></span> </a> </li>
+                                    <li>
+                                        <a href="#" aria-label="Next"> <span aria-hidden="true"><i class="fa fa-angle-right"></i></span> </a>
+                                    </li>
                                 </ul>
                             </nav>
                         </div>
                     </div>
                 </div>
-            </div>    
+            </div>
         </section>
         <!-- END: Event -->
 
@@ -282,8 +294,10 @@
                                     <img src="images/basic/Skyline-logo-footer.png" alt="Polo Logo">
                                 </div>
                             </div>
-                            <div class="col-md-12"><p style="margin-top: 12px;">地表最挺青年的國際機會平台.
-                                </p></div>
+                            <div class="col-md-12">
+                                <p style="margin-top: 12px;">地表最挺青年的國際機會平台.
+                                </p>
+                            </div>
                         </div>
                         <div class="col-md-6">
                             <div class="col-md-3">
@@ -317,7 +331,7 @@
                                 </div>
                             </div>
                             <div class="col-md-3">
-                                <div class="widget clearfix widget-contact-us" >
+                                <div class="widget clearfix widget-contact-us">
                                     <h4 class="widget-title">聯繫我們</h4>
                                     <ul class="list-simple">
                                         <li><a href="mailto:hello@skyline.tw">hello@skyline.tw</a></li>
@@ -349,30 +363,31 @@
         </footer>
         <!-- END: FOOTER -->
     </div>
-        <!-- END: WRAPPER -->
+    <!-- END: WRAPPER -->
 
-        <!-- GO TOP BUTTON -->
-        <a class="gototop gototop-button" href="#"><i class="fa fa-chevron-up"></i></a>
+    <!-- GO TOP BUTTON -->
+    <a class="gototop gototop-button" href="#"><i class="fa fa-chevron-up"></i></a>
 
-        <!-- Theme Base, Components and Settings -->
-        <script src="js/theme-functions.js"></script>
+    <!-- Theme Base, Components and Settings -->
+    <script src="js/theme-functions.js"></script>
 
-        <!-- Custom js file -->
-        <script src="js/custom.js"></script>
-        <script type="text/javascript">
-            $('#portfolio-filter li').bind('click', function () {
-                $('#portfolio-filter li').removeClass('ptf-active');
-                $(this).addClass('ptf-active');
-            });
-            $('#typeBody td').bind('click', function () {
-                $('#typeBody td').removeClass('BodySelect');
-                $(this).addClass('BodySelect');
-            });
-            $('#areaBody td').bind('click', function () {
-                $('#areaBody td').removeClass('BodySelect');
-                $(this).addClass('BodySelect');
-            });
-        </script>
+    <!-- Custom js file -->
+    <script src="js/custom.js"></script>
+    <script type="text/javascript">
+        $('#portfolio-filter li').bind('click', function() {
+            $('#portfolio-filter li').removeClass('ptf-active');
+            $(this).addClass('ptf-active');
+        });
+        $('#typeBody td').bind('click', function() {
+            $('#typeBody td').removeClass('BodySelect');
+            $(this).addClass('BodySelect');
+        });
+        $('#areaBody td').bind('click', function() {
+            $('#areaBody td').removeClass('BodySelect');
+            $(this).addClass('BodySelect');
+        });
+
+    </script>
 
 
 </body>
