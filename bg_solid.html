@@ -159,7 +159,7 @@
                                                             <input type="text" class="form-control required" id="sort_1" placeholder="排序" aria-required="true" size="2">
                                                         </div>
                                                     </td>
-                                                    <td><img src="images/blog/1.jpg.jpg" class="triggerfile" width="60" height="60"></td>
+                                                    <td><img src="images/demo/1.jpg.jpg" class="triggerfile" width="60" height="60"></td>
                                                     <td>
                                                         <div class="btn-group" data-toggle="buttons">
                                                             <input type="text" class="form-control required" name="phone" placeholder="文字" aria-required="true">
@@ -297,7 +297,7 @@
             });
             $('#AddSolid').bind('click', function() {
                 var num = Math.floor(Math.random() * (9999 - 1000 + 1)) + 1000;
-                $('#solidBody').append('<tr id="tr_' + num + '"><td>' + num + '</td><td><div class="btn-group" data-toggle="buttons"><label class="btn btn-xs btn-default active"><input type="radio" value="1" name="is_activeAdd" data-id="' + num + '">顯示</label><label class="btn btn-xs btn-default"><input type="radio" value="0" name="is_activeAdd" data-id="' + num + '">不顯示</label><input type="text" class="form-control required" id="sort_' + num + '" placeholder="排序" aria-required="true" size="2"></div></td><td><img src="images/blog/1.jpg.jpg" class="triggerfile" width="60" height="60"></td><td><div class="btn-group" data-toggle="buttons"><input type="text" class="form-control required" name="phone" placeholder="文字" aria-required="true"></div></td><td><div class="btn-group" data-toggle="buttons"><input type="text" class="form-control required" name="phone" placeholder="連結" aria-required="true"></div></td><td><button type="button" class="btn btn-primary btn-xs">儲存</button><button type="button" class="btn btn-danger btn-xs delete" data-id="' + num + '">刪除</button></td></tr>');
+                $('#solidBody').append('<tr id="tr_' + num + '"><td>' + num + '</td><td><div class="btn-group" data-toggle="buttons"><label class="btn btn-xs btn-default active"><input type="radio" value="1" name="is_activeAdd" data-id="' + num + '">顯示</label><label class="btn btn-xs btn-default"><input type="radio" value="0" name="is_activeAdd" data-id="' + num + '">不顯示</label><input type="text" class="form-control required" id="sort_' + num + '" placeholder="排序" aria-required="true" size="2"></div></td><td><img src="images/demo/1.jpg.jpg" class="triggerfile" width="60" height="60"></td><td><div class="btn-group" data-toggle="buttons"><input type="text" class="form-control required" name="phone" placeholder="文字" aria-required="true"></div></td><td><div class="btn-group" data-toggle="buttons"><input type="text" class="form-control required" name="phone" placeholder="連結" aria-required="true"></div></td><td><button type="button" class="btn btn-primary btn-xs">儲存</button><button type="button" class="btn btn-danger btn-xs delete" data-id="' + num + '">刪除</button></td></tr>');
             });
             $('#solidBody').on('click', '.triggerfile', function() {
                 $('#fileInput').trigger('click');

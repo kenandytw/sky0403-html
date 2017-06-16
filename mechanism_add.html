@@ -137,17 +137,6 @@
             </ul>
         </div>
         <!-- END: Breadcrumb -->
-        <!-- Step Line -->
-        <div class="text-center">
-            <h5>舉辦活動</h5>
-            <div class="breadcrumb text-center fancy">
-                <ul>
-                    <li><a href="#">Step1.填寫機後資訊</a> </li>
-                    <li class="active"><a href="#">Step2.確認使用條款</a> </li>
-                </ul>
-            </div>
-        </div>
-        <!-- END: Step Line -->
         <!-- start Form  background-overlay-->
         <section class="content">
             <div class="container">
@@ -264,7 +253,7 @@
                                 <div class="col-md-12">
                                     <div class="form-group">
                                         <div class="actImgBox">
-                                            <img src="images/blog/1.jpg">
+                                            <img src="images/demo/1.jpg">
 
                                             <span id="actImgUpload"><a class="button large black button-3d rounded icon-left m-t-10"><span><i class="fa fa-plus"></i>新增圖片</span></a>
                                             </span>
@@ -273,7 +262,20 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="hr-title hr-long center"><abbr>機構相關證明文件</abbr> </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <span>為確認您的機構為合法成立且正常營運,請上傳機構負責人身分證正反面檔案及相關可供證明之檔案(如機構介紹.過去舉辦活動等),以利審查,上傳檔案已PDF為限.</span><br />
 
+                                    <span class="btn btn-success fileinput-button m-t-30">
+                                        <i class="glyphicon glyphicon-plus"></i>
+                                        <span>新增相關文件</span>
+                                        <!-- The file input field used as target for the file upload widget -->
+                                        <input id="fileupload" type="file" name="files[]" multiple="" data-url="伺服器端檔案">
+                                    </span>
+
+                                </div>
+                            </div>
                             <div class="row m-t-40 flex-button">
                                 <div class="col-md-6 col-xs-6">
                                     <button type="reset" class="button large red button-3d rounded ">全部清除</button>
